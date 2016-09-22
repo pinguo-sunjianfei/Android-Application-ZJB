@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_main"
+    android:orientation="vertical"
+    android:paddingBottom="20.0dp">
+
+    <View
+        android:id="@+id/pager_background"
+        android:layout_width="match_parent"
+        android:layout_height="155.0dp"
+        android:background="@color/themes_main" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/pager_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55.0dp"
+            android:clipChildren="false">
+
+            <ImageView
+                android:layout_width="260.0dp"
+                android:layout_height="180.0dp"
+                android:layout_gravity="center"
+                android:background="@drawable/photo_frame_bg" />
+
+            <ImageView
+                android:id="@+id/default_image"
+                android:layout_width="240.0dp"
+                android:layout_height="160.0dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@drawable/photo_wall_header_default" />
+
+            <com.idrv.coach.ui.widget.FixedViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/photo_wall_header_viewpager_margin"
+                android:layout_marginRight="@dimen/photo_wall_header_viewpager_margin"
+                android:clipChildren="false" />
+        </FrameLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dp"
+            android:src="@drawable/photowall_header_text" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="12.0dp"
+            android:layout_marginRight="12.0dp"
+            android:layout_marginTop="10.0dp"
+            android:background="@color/h_divider_line_color" />
+    </LinearLayout>
+</FrameLayout>

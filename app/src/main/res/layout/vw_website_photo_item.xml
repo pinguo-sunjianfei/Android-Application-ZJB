@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/text_color_white"
+    android:paddingLeft="10.0dp"
+    android:paddingRight="10.0dp">
+
+    <com.idrv.coach.ui.view.ImageGridLayout
+        android:id="@+id/grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:item_count="1"
+        app:item_margin="4.0dp"
+        app:item_row_view_count="4" />
+</FrameLayout>

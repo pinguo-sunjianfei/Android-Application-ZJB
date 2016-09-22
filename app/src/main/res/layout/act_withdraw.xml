@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20.0dp"
+        android:gravity="left"
+        android:paddingBottom="8dp"
+        android:paddingTop="15dp"
+        android:text="@string/pls_input_sum"
+        android:textColor="@color/black_54"
+        android:textSize="12sp" />
+
+    <com.idrv.coach.ui.widget.ClearEditText
+        android:id="@+id/money_sum_edit"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@drawable/shape_rectangle_bg_white_stroke_gray"
+        android:gravity="center_vertical"
+        android:hint="@string/sum_text_hint"
+        android:inputType="number"
+        android:paddingBottom="12dp"
+        android:paddingLeft="20.0dp"
+        android:paddingRight="8dp"
+        android:paddingTop="12dp"
+        android:textColor="@color/black_78"
+        android:textColorHint="#33000000"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/balance_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20.0dp"
+        android:layout_marginRight="10.0dp"
+        android:gravity="right"
+        android:paddingBottom="15dp"
+        android:paddingTop="8.0dp"
+        android:textColor="@color/black_54"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20.0dp"
+        android:gravity="left"
+        android:paddingBottom="8dp"
+        android:paddingTop="15dp"
+        android:text="@string/pls_input_info"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_rectangle_bg_white_stroke_gray"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/item_bank_name"
+            layout="@layout/vw_input_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <include
+            android:id="@+id/item_bank_num"
+            layout="@layout/vw_input_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/next_step"
+        android:layout_width="match_parent"
+        android:layout_height="44.0dp"
+        android:layout_marginLeft="20.0dp"
+        android:layout_marginRight="20.0dp"
+        android:layout_marginTop="30.0dp"
+        android:background="@drawable/btn_withdraw"
+        android:text="@string/next_step"
+        android:textColor="@color/text_color_white"
+        android:textSize="16.0sp" />
+</LinearLayout>

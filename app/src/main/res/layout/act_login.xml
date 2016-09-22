@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_color_white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/image_app_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/login_logo" />
+
+        <ImageView
+            android:id="@+id/image_app_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25.0dp"
+            android:src="@drawable/img_login_slogan" />
+
+        <Button
+            android:id="@+id/btn_wx_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20.0dp"
+            android:layout_marginLeft="32.0dp"
+            android:layout_marginRight="32.0dp"
+            android:layout_marginTop="100.0dp"
+            android:background="@drawable/btn_login_selector"
+            android:text="@string/login"
+            android:textColor="@color/text_color_white"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

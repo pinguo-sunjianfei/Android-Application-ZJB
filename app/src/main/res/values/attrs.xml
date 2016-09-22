@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RoundImageView">
+        <attr name="allRound" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundedImageView">
+        <attr name="corner_radius" format="dimension" />
+        <attr name="round_border_width" format="dimension" />
+        <attr name="round_border_color" format="color" />
+        <attr name="mutate_background" format="boolean" />
+        <attr name="round_image_txt_size" format="dimension" />
+        <attr name="round_image_txt_color" format="color" />
+        <attr name="oval" format="boolean" />
+        <attr name="android_scaleType" format="integer" />
+        <attr name="show_square" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="SwipeBackLayout">
+        <attr name="edge_ratio" format="float" />
+        <attr name="edge_flag">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+            <enum name="bottom" value="2" />
+            <enum name="all" value="3" />
+        </attr>
+        <attr name="shadow_left" format="reference" />
+        <attr name="shadow_right" format="reference" />
+        <attr name="shadow_bottom" format="reference" />
+    </declare-styleable>
+
+    <attr name="SwipeBackLayoutStyle" format="reference" />
+    <attr name="textFieldStyle" format="reference" />
+
+    <declare-styleable name="SquareImageView">
+        <attr name="use_width" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleProgressBar">
+        <attr name="stroke_width" format="dimension" />
+        <attr name="color_background" format="color" />
+        <attr name="color_arc" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleIndicator">
+        <attr name="ci_width" format="dimension" />
+        <attr name="ci_height" format="dimension" />
+        <attr name="ci_margin" format="dimension" />
+        <attr name="ci_animator" format="reference" />
+        <attr name="ci_animator_reverse" format="reference" />
+        <attr name="ci_drawable" format="reference" />
+        <attr name="ci_drawable_unselected" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="TimeDown">
+        <attr name="switcherColor" format="color" />
+        <attr name="switcherSize" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="GridLayout">
+        <attr name="item_row_view_count" format="integer" />
+        <attr name="item_count" format="integer" />
+        <attr name="item_margin" format="dimension" />
+        <attr name="item_drawable" format="reference" />
+        <attr name="item_text_color" format="color"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="RankItemLayout">
+        <attr name="item_background_drawable" format="reference" />
+        <attr name="item_chassis_drawable" format="reference" />
+        <attr name="item_width_height" format="dimension" />
+        <attr name="item_number_text_color" format="color" />
+        <attr name="item_number_margin_top" format="dimension" />
+        <attr name="item_number_background_color" format="color" />
+        <attr name="item_show_chassis" format="boolean" />
+        <attr name="item_avatar_top_margin" format="dimension" />
+        <attr name="item_num_text_size" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="MaterialDesignProgressBar">
+        <attr name="progress_stroke_width" format="dimension" />
+        <attr name="progress_stroke_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="DiscoverItemLayout">
+        <attr name="image_size" format="dimension" />
+    </declare-styleable>
+
+</resources>

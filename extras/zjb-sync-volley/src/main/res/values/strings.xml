@@ -1,0 +1,85 @@
+<resources>
+    <string name="status_default" translatable="false">发生异常</string>
+    <string name="status_error_tip">错误</string>
+    <string name="status_errorcode200" translatable="false">成功</string>
+    <string name="status_errorcode401">商品不存在</string>
+    <string name="status_errorcode404">貌似没有连接到网络</string>
+    <string name="status_errorcode405">已下架</string>
+    <string name="status_errorcode420" translatable="false">用户登录失效</string>
+    <string name="status_errorcode500">服务器出现异常，请稍候重试!</string>
+    <string name="status_errorcode10000">未找到用户</string>
+    <string name="status_errorcode10001" translatable="false">这个第三方账户已经是云相册账户</string>
+    <string name="status_errorcode10002" translatable="false">当用户第三方信息符合和云相册email账户的关系，需要提示用户确认绑定</string>
+    <string name="status_errorcode10003" translatable="false">你已和第三方账户绑定</string>
+    <string name="status_errorcode10004">邮箱格式不正确</string>
+    <string name="status_errorcode10005" translatable="false">此邮箱已绑定</string>
+    <string name="status_errorcode10006">此邮箱已被占用</string>
+    <string name="status_errorcode10007" translatable="false">该邮箱已经绑定成功</string>
+    <string name="status_errorcode10008" translatable="false">你尚未绑定邮箱</string>
+    <string name="status_errorcode10009" translatable="false">文件格式错误</string>
+    <string name="status_errorcode10010">上传头像失败</string>
+    <string name="status_errorcode10011">昵称中包含非法字符</string>
+    <string name="status_errorcode10012">昵称重复</string>
+    <string name="status_errorcode10013" translatable="false">第三方授权失败</string>
+    <string name="status_errorcode10510">密码有误，请重新输入</string>
+    <string name="status_errorcode10511">该账户不存在</string>
+    <string name="status_errorcode10512">昵称不可用，请重新修改</string>
+    <string name="status_errorcode10513">该昵称已被他人使用</string>
+    <string name="status_errorcode10518">该邮箱已注册，请直接登录</string>
+    <string name="status_errorcode10519">邮箱格式错误</string>
+    <string name="status_errorcode10520">该邮箱已注册，请直接登录</string>
+    <string name="status_errorcode10521">该账户不存在</string>
+    <string name="status_errorcode10522">密码需由6-20位字符组成</string>
+    <string name="status_errorcode10524" translatable="false">个性签名修改失败，请重试</string>
+    <string name="status_errorcode10525" translatable="false">该SNS账号已有Camera360会员账户，不能进行绑定</string>
+    <string name="status_errorcode10535">This number is already registered, log in?</string>
+    <string name="status_errorcode10536">手机号不存在</string>
+    <string name="status_errorcode10537">验证码错误</string>
+    <string name="status_errorcode10538">手机号码格式错误</string>
+    <string name="status_errorcode10539" translatable="false">verify code invaild</string>
+    <string name="status_errorcode10540">Daily limit reached, try again later</string>
+    <string name="status_errorcode10541" translatable="false">mobile with password</string>
+    <string name="status_errorcode10542" translatable="false">mobile without password</string>
+    <string name="status_errorcode10543">Please wait before requesting again</string>
+    <string name="status_errorcode10622">已经存在该昵称</string>
+    <string name="status_errorcode10623">非法昵称</string>
+    <string name="status_errorcode10624">头像数据错误哦</string>
+    <string name="status_errorcode10625">该签名非法</string>
+    <string name="status_errorcode10658">该照片已被删除</string>
+    <string name="status_errorcode10659">该照片已被删除</string>
+    <string name="status_errorcode100560">该专辑已被删除</string>
+
+    <!--小强相关的错误码-->
+    <string name="status_errorcode451" translatable="false">没有Token</string>
+    <string name="status_errorcode452" translatable="false">无效Token</string>
+    <string name="status_errorcode453" translatable="false">过期Token</string>
+    <string name="status_errorcode454" translatable="false">错误的sig</string>
+    <string name="status_errorcode455" translatable="false">参数格式错误</string>
+    <string name="status_errorcode456" translatable="false">无效的参数</string>
+    <string name="status_errorcode457" translatable="false">所有参数可选时，没有提交任何参数</string>
+    <string name="status_errorcode458" translatable="false">请求执行失败</string>
+    <string name="status_errorcode459" translatable="false">今日获取验证码次数已用完</string>
+    <string name="status_errorcode460" translatable="false">验证码已失效，请重新获取</string>
+    <string name="status_errorcode461" translatable="false">你已经绑定过手机号</string>
+    <string name="status_errorcode462" translatable="false">该手机号已绑定</string>
+    <string name="status_errorcode463" translatable="false">手机号格式错误</string>
+    <string name="status_errorcode464" translatable="false">验证码长度错误</string>
+    <string name="status_errorcode465" translatable="false">验证码输入错误</string>
+    <string name="status_errorcode466" translatable="false">验证码已失效</string>
+    <string name="status_errorcode467" translatable="false">卡号长度不足19</string>
+    <string name="status_errorcode468" translatable="false">银行卡号格式错误</string>
+    <string name="status_errorcode469" translatable="false">身份证号格式错误</string>
+    <string name="status_errorcode470" translatable="false">提现金额格式错误</string>
+    <string name="status_errorcode471" translatable="false">手机号格式错误</string>
+    <string name="status_errorcode472" translatable="false">获取账户信息失败</string>
+    <string name="status_errorcode473" translatable="false">余额不足</string>
+    <string name="status_errorcode474" translatable="false">无效的邀请码</string>
+    <string name="status_errorcode475" translatable="false">验证失败</string>
+    <string name="status_errorcode476" translatable="false">未做任何修改</string>
+    <string name="status_errorcode477" translatable="false">获取信息失败</string>
+        <!--错误码464、465、466，根据产品要求，君显示一种，如下-->
+    <string name="pls_input_right_varifycode">请输入正确的验证码</string>
+
+
+
+</resources>

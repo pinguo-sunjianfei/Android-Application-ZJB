@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.idrv.coach.ui.view.HomeInfluenceLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/influence"
+        android:textColor="#918d8a"
+        android:textSize="11.0sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8.0dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/left_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/icon_feed_interested_photo" />
+
+        <TextView
+            android:id="@+id/num_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="5.0dp"
+            android:text="9999"
+            android:textColor="#000000"
+            android:textSize="16.0sp" />
+
+    </LinearLayout>
+</com.idrv.coach.ui.view.HomeInfluenceLayout>

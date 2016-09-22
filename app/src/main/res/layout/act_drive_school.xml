@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="com.idrv.coach.ui.DriveSchoolActivity">
+
+    <EditText
+        android:id="@+id/driveSchool_edit"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/back_corner4_lgray"
+        android:hint="@string/pls_input_drive_school"
+        android:maxLines="1"
+        android:paddingLeft="8dp"
+        android:textColorHint="#888"
+        android:textSize="16sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/driveSchool_edit"
+        android:layout_marginTop="8dp"
+        android:background="@color/h_divider_line_color"/>
+
+    <ListView
+        android:id="@+id/driveSchool_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/driveSchool_edit"
+        android:layout_marginTop="9dp"
+        android:paddingLeft="16dp"/>
+
+
+</RelativeLayout>

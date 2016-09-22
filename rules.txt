@@ -1,0 +1,173 @@
+照片圈android客户端代码规范
+1.属性变量命名：(优先级从高到低)，所有变量遵从驼峰命名方式
+    1.1 如果是全局的变量，以g开头，例如在CircleApplication当中的:public static CircleApplication gContext;
+    1.2 如果是静态变量，以s开头，例如public static int sCount;
+    1.3 如果内部类，以小写字母开头
+    1.4 普通的类，以m开头，例如
+        class A{
+            public static Context gContext;
+            private static int sCount;
+            private float mWidth;
+            class Inner{
+                private static int sSum;
+                private float distance;
+                private String name;
+                ......
+            }
+            ......
+        }
+    1.5 如果方法的形参，在方法体里面没有被使用，则用下划线表示，比如
+    mImageCropTitleBar.setOnBackClickListener(__ -> getActivity().finish())
+                    .setOnAheadClickListener(__ -> onConfirmClick())
+                    .setOnGalleryClickListener(v -> showGalleryPopupWindow())
+    listView.setOnItemClickListener((__, ___, position, ____) -> {
+                    //1.修改标题栏的相册名称
+                    String galleryName = adapter.getItem(position).getGalleryName();
+                    mImageCropTitleBar.setTitle(galleryName);
+                    //2.将popwindow消失
+                    if (mPopupWindow != null && mPopupWindow.isShowing()) {
+                        mPopupWindow.dismiss();
+                    }
+                    //3.相册内容改变
+                    mGalleryAdapter.refresh(adapter.getItem(position).getPictures());
+                    mGalleryAdapter.notifyDataSetChanged();
+                    mRecyclerView.scrollToPosition(0);
+                    //4.改变裁剪图片的内容
+                    mImageCropView.setImageURI(mGalleryAdapter.getUrl(0));
+                    if (mScrollLinearLayout.isTopState()) {
+                        mScrollLinearLayout.scrollToBottom();
+                    }
+                });
+2.数据库操作规范
+    2.1 所有的数据库操作类必须放在us.pinguo.cc.data.db包下，命名方式为：TDXxx(table data,存放实体数据类)、TRXxx
+        (table relationship，存放实体关系数据)
+    2.2 所有的数据库操作类必须编写 getCreateSQL()方法,用于创建表，并在DBOpenHelper的createTable调用
+        public synchronized static String getCreateSQL() {
+            return new StringBuilder()
+                    .append("CREATE TABLE IF NOT EXISTS ")
+                    .append(TABLE_NAME).append("(")
+                    .append(PID).append(" INTEGER PRIMARY KEY,")
+                    ......
+                    .append(")").toString();
+        }
+    2.3 插入数据格式如下
+        public static void insertPhoto(Photo galleryPhoto) {
+            SQLiteDatabase db = DBService.getWritableDatabase();
+            try {
+                db.beginTransaction();
+                //todo 执行插入操作
+                db.setTransactionSuccessful();
+            } catch (Exception e) {
+                e.printStackTrace();
+            } finally {
+                db.endTransaction();
+                DBService.closeDataBase(db);
+            }
+        }
+    2.4 查找数据格式如下：
+        public static Photo findPhotoById(long id) {
+            SQLiteDatabase db = DBService.getReadableDatabase();
+            Photo galleryPhoto = null;
+            Cursor cursor = null;
+            try {
+                db.beginTransaction();
+                //todo 执行查找操作
+                db.setTransactionSuccessful();
+            } catch (Exception e) {
+                e.printStackTrace();
+            } finally {
+                db.endTransaction();
+                if(null!=cursor){
+                    cursor.close();
+                }
+                DBService.closeDataBase(db);
+            }
+            return galleryPhoto;
+        }
+     2.5 所有的SQL语句必须大写
+
+3.网络接口请求操作
+    3.1 网络接口请求处于MVC结构当中的model层，不能将网络数据的访问放到其他层级，避免打乱软件架构，如果在不同的model当中
+        需要请求处理同一个接口，那么可以将该接口的访问操作放到BaseModel当中，需要用到重复接口的model可以继承自BaseModel
+    3.2 在所有的网络请求过程当中，必须有两个步骤，一是“构建请求”，二是“访问网络”，构建请求的过程必须使用RequestBuilder
+        通过Builder模式进行构建，如果对结果的封装是一个多重泛型类型(如List<Photo>)，要传一个自定义的解析器进去，比如
+        mRequest=RequestBuilder.<List<Photo>>create().parser(new PhotoListParser()).....;
+        /**
+         * 得到首屏评论数据
+         *
+         * @param pid photoId
+         * @return
+         */
+        public Observable<Comment> getAll(long pid) {
+            //1.从对象池当中获取Photo对象
+            Photo galleryPhoto = gPhotoPool.getPhoto(pid);
+            //2.构建一个请求
+            mGetAllRequest = RequestBuilder.create(CommentPage.class)
+                    .url(ApiConstant.COMMENT_GET_ALL)
+                    .put("albumId", galleryPhoto.getAid())
+                    .put("photoId", pid)
+                    .put("sort", -1)
+                    .put("commCnt", PAGE_COUNT)
+                    .build();
+            //3.利用构建好的请求访问网络，并作数据的预处理
+            return gRequestPool.request(mGetAllRequest)
+                            .map(HttpResponse::getData)
+                            .doOnNext(this::handleCommentPage)
+                            .map(CommentPage::getComms)
+                            .flatMap(Observable::from)
+                            .observeOn(AndroidSchedulers.mainThread());
+        }
+    3.3 不论是从网络上面，还是从数据库当中获取到了Photo\Album\User三种类型的数据，在model层必须调用相应的池对象的更新
+        方法，以使当前池子当中的对象所有字段是最新、最全的数据，比如，如果网络请求的数据当中包含了一个photo对象，那么在model
+        层进行数据预处理的时候，就应该调用PhotoPool.gPhotoPool.addPhoto(galleryPhoto)/PhotoPool.gPhotoPool.addPhoto2(galleryPhoto)
+        如果是在MainActivity当中获取到的就调用addPhoto2,如果不是,就调用addPhoto
+
+4.类、属性的初始化
+    4.1 类当中的属性声明，只起声明作用, 不起初始化的作用，如果需要在对象创建之前做相应的初始化，那么就在静态/动态 初始化
+        代码块当中进行，比如
+        public class CameraFragment extends BaseFragment {
+            @InjectView(R.id.camera_gallery_btn)
+            public ImageView mCameraGallery;
+            private SimpleCameraHost mCustomCameraHost;
+            private MediaScannerConnection.OnScanCompletedListener mScanCompletedListener;
+            //动态代码块，会在构造方法调用之前调用
+            {
+                //1.保存照片到系统相册扫描的回调
+                mScanCompletedListener = (path, uri) -> {
+                    ......
+                };
+                //2.初始化CameraHost
+                mCustomCameraHost = new SimpleCameraHost(CircleApplication.gContext) {
+                       ......
+                };
+
+            }
+
+            ......
+        }
+5.图片加载库PinguoImageLoader的使用
+    5.1 无论是加载本地图片，还是加载网络图片，必须嗲用setQiniu(width,height)
+            PinguoImageLoader.create(url)
+                    .setDisplayType(PinguoImageLoader.DISPLAY_FADE_IN)
+                    .setFadeInTime(800)
+                    .setQiniu(mItemSize / 2, mItemSize / 2)
+                    .setDefaultDrawable(new ColorDrawable(0x00000000))
+                    .into(holder.mImageView);
+    5.2 如果需要实现背景淡出，图片淡入的效果，into()里面的控件换成自定义控件us.pinguo.loader.view.PinguoImageView
+        就可以了,其他不变
+    5.3 如果涉及到GridLayout\GridView\ListView\ScrollView\RecyclerView当中图片的显示，一定要调用
+
+        mRecyclerView.addOnScrollListener(new RecyclerPauseOnScrollListener(true, true));
+
+6.注释：注释不会影响程序的运行时间，.class文件当中是没有任何注释的，能够加注释的地方，尽量加上注释
+    6.1 类注释--Setting-->Editor--->File And Code Templates--->includes--->File Header
+    /**
+     * time: ${DATE}
+     * description:
+     *
+     * @author sunjianfei(这里写明自己的名字,最好是英文)
+     */
+    6.2 在流程性比较强的代码当中注明流程步骤，比如1.xxxx 2.ooooo
+7.线程调度
+        由于整个工程采用Rx架构，所以在app主程当中不能有new Thread()\implements Runnable\等类似的代码出现，
+    当然也不能存在各种形式的线程池，所有的异步操作，线程调度操作由RxJava完成

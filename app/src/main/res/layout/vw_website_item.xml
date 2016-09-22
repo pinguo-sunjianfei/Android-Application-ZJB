@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.idrv.coach.ui.view.WebSiteItemView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/website_item_bg"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/main_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="10.0dp"
+        android:drawableTop="@drawable/icon_student_photo"
+        android:gravity="center"
+        android:text="上传学员风采照片"
+        android:textColor="#000000"
+        android:textSize="14.0sp" />
+
+    <TextView
+        android:id="@+id/sub_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3.0dp"
+        android:gravity="center"
+        android:text="未上传"
+        android:textColor="@color/black_54"
+        android:textSize="11.0sp" />
+
+
+</com.idrv.coach.ui.view.WebSiteItemView>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff3a3a3a"
+    android:orientation="vertical">
+
+    <com.idrv.coach.ui.view.GalleryTitleBar
+        android:id="@+id/gallery_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/crop_image_title_height"
+        android:background="@color/themes_main" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false" />
+</LinearLayout>

@@ -1,0 +1,20 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main">
+
+    <ImageView
+        android:id="@+id/task_slogan"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="30dp"
+        android:paddingTop="8dp"
+        android:src="@drawable/img_task_slogan" />
+
+    <include
+        layout="@layout/vw_task_card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/task_slogan" />
+</RelativeLayout>

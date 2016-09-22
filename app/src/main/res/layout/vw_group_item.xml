@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_main"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/group_name"
+        android:layout_width="wrap_content"
+        android:layout_height="30.0dp"
+        android:layout_marginLeft="14.0dp"
+        android:gravity="center_vertical"
+        android:text="三月"
+        android:textColor="#9d9996"
+        android:textSize="12.0sp" />
+</FrameLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/text_color_white"
+        android:paddingBottom="16.0dp"
+        android:paddingLeft="14.0dp"
+        android:paddingTop="19.0dp"
+        android:text="@string/location_city"
+        android:textColor="#7c7a78"
+        android:textSize="13.0sp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/text_color_white"
+        android:paddingBottom="19.0dp"
+        android:paddingLeft="14.0dp">
+
+        <TextView
+            android:id="@+id/location_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/location_now"
+            android:textColor="@color/black"
+            android:textSize="16.0sp" />
+
+        <TextView
+            android:id="@+id/location_city"
+            android:layout_width="wrap_content"
+            android:layout_height="30.0dp"
+            android:background="@drawable/btn_location_city_bg"
+            android:gravity="center"
+            android:paddingLeft="20.0dp"
+            android:paddingRight="20.0dp"
+            android:textColor="@color/black"
+            android:textSize="16.0sp"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14.0dp"
+        android:layout_marginTop="15.0dp"
+        android:text="@string/other_tips"
+        android:textColor="#7c7a78"
+        android:textSize="13.0sp" />
+
+    <TextView
+        android:id="@+id/other_city_tv"
+        android:layout_width="match_parent"
+        android:layout_height="50.0dp"
+        android:layout_marginTop="6.0dp"
+        android:background="@drawable/list_item_bg"
+        android:gravity="center_vertical"
+        android:paddingLeft="14.0dp"
+        android:text="@string/other"
+        android:textColor="@color/black"
+        android:textSize="16.0sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14.0dp"
+        android:layout_marginTop="15.0dp"
+        android:paddingBottom="6.0dp"
+        android:text="@string/city_tips"
+        android:textColor="#7c7a78"
+        android:textSize="13.0sp" />
+
+</LinearLayout>

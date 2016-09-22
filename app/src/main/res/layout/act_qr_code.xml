@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    tools:context="com.idrv.coach.ui.QrCodeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="12dp">
+
+        <ImageView
+            android:id="@+id/QrCode_img"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_qrcode"/>
+
+        <Button
+            android:id="@+id/QrCode_bt"
+            android:layout_width="250dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/btn_withdraw"
+            android:onClick="UpLoadImgClick"
+            android:text="@string/title_qrcode"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:paddingLeft="14dp"
+            android:text="@string/qrcode_notice_title"
+            android:textColor="#4e4e4e"
+            android:textSize="14sp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginLeft="14dp"
+            android:src="@drawable/img_qrcode_help"/>
+
+
+    </LinearLayout>
+
+</FrameLayout>

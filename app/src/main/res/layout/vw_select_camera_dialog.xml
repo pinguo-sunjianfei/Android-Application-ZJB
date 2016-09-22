@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/btn_camera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dialog_item_bg"
+            android:gravity="center"
+            android:padding="15dp"
+            android:shadowColor="#FFFFFF"
+            android:shadowDx="0.5"
+            android:shadowDy="0.5"
+            android:shadowRadius="0.5"
+            android:text="@string/camera"
+            android:textColor="@color/black_87"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.0dp"
+            android:background="@color/h_divider_line_color" />
+
+        <TextView
+            android:id="@+id/btn_gallery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/dialog_item_bg"
+            android:gravity="center"
+            android:padding="15dp"
+            android:shadowColor="#FFFFFF"
+            android:shadowDx="0.5"
+            android:shadowDy="0.5"
+            android:shadowRadius="0.5"
+            android:text="@string/select_from_gallery"
+            android:textColor="@color/black_87"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/btn_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/dialog_item_bg"
+            android:gravity="center"
+            android:padding="15dp"
+            android:shadowColor="#000000"
+            android:shadowDx="0.5"
+            android:shadowDy="0.5"
+            android:shadowRadius="0.5"
+            android:text="@string/cancel"
+            android:textColor="@color/black_87"
+            android:textSize="18sp" />
+    </LinearLayout>
+</LinearLayout>

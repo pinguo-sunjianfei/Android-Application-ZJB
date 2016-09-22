@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="1.5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="25.0dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="13.0dp"
+                    android:paddingRight="13.0dp">
+
+                    <TextView
+                        android:id="@+id/car_owner_name_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/item_owner_name"
+                        android:textColor="@color/black_87"
+                        android:textSize="15.0sp" />
+
+                    <TextView
+                        android:id="@+id/car_owner_name_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="13.0dp"
+                        android:layout_toRightOf="@id/car_owner_name_title"
+                        android:text="李欣竹"
+                        android:textColor="#918d8a"
+                        android:textSize="14.0sp" />
+
+                    <LinearLayout
+                        android:id="@+id/price_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toLeftOf="@+id/insurance_price_tv"
+                            android:text="@string/price"
+                            android:textColor="@color/black_87"
+                            android:textSize="15.0sp" />
+
+                        <TextView
+                            android:id="@+id/insurance_price_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginLeft="8.0dp"
+                            android:textColor="#918d8a"
+                            android:textSize="14.0sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/company_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12.0dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="13.0dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/insurance_company"
+                        android:textColor="@color/black_87"
+                        android:textSize="15.0sp" />
+
+                    <TextView
+                        android:id="@+id/insurance_company_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="13.0dp"
+                        android:text="15982372098"
+                        android:textColor="#918d8a"
+                        android:textSize="14.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tel_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20.0dp"
+                    android:layout_marginTop="12.0dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="13.0dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/car_owner_tel"
+                        android:textColor="@color/black_87"
+                        android:textSize="15.0sp" />
+
+                    <TextView
+                        android:id="@+id/insurance_tel_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="13.0dp"
+                        android:text="李欣竹"
+                        android:textColor="#918d8a"
+                        android:textSize="14.0sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/right_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|bottom"
+                android:src="@drawable/ins_audit" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/bottom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.0dp"
+                android:background="@color/h_divider_line_color" />
+
+            <TextView
+                android:id="@+id/ins_reviews"
+                android:layout_width="match_parent"
+                android:layout_height="44.0dp"
+                android:background="@drawable/list_item_bg"
+                android:gravity="center"
+                android:text="@string/insurance_reviews"
+                android:textColor="@color/themes_main"
+                android:textSize="15.0sp" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

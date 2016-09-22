@@ -1,0 +1,98 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/oneTask11_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="6dp"
+        app:cardPreventCornerOverlap="false">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.joooonho.SelectableRoundedImageView
+                android:id="@+id/oneTask11_img"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/task_pic_h"
+                android:scaleType="centerCrop"
+                app:sriv_left_top_corner_radius="10dp"
+                app:sriv_right_top_corner_radius="10dp" />
+
+            <TextView
+                android:id="@+id/oneTask11_descTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:visibility="invisible"
+                android:layout_above="@+id/oneTask11_description"/>
+
+
+            <ImageView
+                android:id="@+id/oneTask11_description"
+                android:layout_width="60dp"
+                android:layout_height="48dp"
+                android:layout_alignBottom="@id/oneTask11_img"
+                android:layout_alignParentRight="true"
+                android:paddingLeft="20dp"
+                android:paddingRight="10dp"
+                android:paddingTop="1dp"
+                android:src="@drawable/ic_task_help" />
+
+            <RelativeLayout
+                android:id="@+id/location2"
+                android:layout_width="match_parent"
+                android:layout_height="105dp"
+                android:layout_below="@id/oneTask11_img"
+                android:background="@color/task_receive_control">
+
+                <LinearLayout
+                    android:id="@+id/location1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp">
+
+                    <com.idrv.coach.ui.widget.TimeDownHour
+                        android:id="@+id/oneTask11_timeDown"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:switcherColor="#fff"
+                        app:switcherSize="14sp" />
+
+                    <Button
+                        android:id="@+id/oneTask11_shareBt"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_receive_selector"
+                        android:text="@string/accept"
+                        android:textColor="@color/task_receive_control"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/location1"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/countdown"
+                    android:textSize="9sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</FrameLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    android:orientation="vertical"
+    android:paddingBottom="36.0dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:background="@drawable/title_shadow">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/ins_now"
+            android:textColor="@color/text_color_white"
+            android:textSize="18.0sp" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left|center_vertical"
+            android:paddingLeft="15.0dp"
+            android:paddingRight="15.0dp"
+            android:src="@drawable/back" />
+    </FrameLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20.0dp" />
+
+
+    <include
+        android:id="@+id/item_1"
+        layout="@layout/vw_driving_ins_item"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10.0dp"
+        android:layout_marginRight="10.0dp"
+        android:layout_weight="1.0" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="18.0dp" />
+
+    <include
+        android:id="@+id/item_2"
+        layout="@layout/vw_driving_ins_item"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10.0dp"
+        android:layout_marginRight="10.0dp"
+        android:layout_weight="1.0" />
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="252dp"
+              android:layout_height="131dp"
+              android:background="@android:color/white"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="252dp"
+        android:layout_height="91dp"
+        android:padding="12dp">
+
+        <EditText
+            android:id="@+id/dialogUserText_edit"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:layout_centerVertical="true"
+            android:hint="请输入您的qq号"
+            android:singleLine="true"
+            android:paddingLeft="8dp"
+            android:paddingRight="36dp"
+            android:background="@drawable/frame_corner3_lgray"
+            android:textSize="15sp"/>
+
+        <ImageView
+            android:id="@+id/dialogUserText_clear"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_edit_clear"
+            android:layout_marginRight="8dp"/>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="252dp"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/dialogUserText_cancel"
+            android:layout_width="126dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:text="取消"
+            android:background="#2e2e2e"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/dialogUserText_sure"
+            android:layout_width="126dp"
+            android:layout_height="match_parent"
+            android:background="#c23734"
+            android:textColor="@android:color/white"
+            android:text="确定"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

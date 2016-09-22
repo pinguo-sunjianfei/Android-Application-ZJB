@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    tools:context="com.idrv.coach.ui.UserInfoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="29dp"
+            android:gravity="bottom"
+            android:paddingBottom="4dp"
+            android:paddingLeft="20dp"
+            android:text="@string/item_contact_notice"
+            android:textColor="#606060"
+            android:textSize="11sp" />
+
+        <include
+            android:id="@+id/item_user_photo"
+            layout="@layout/vw_discover_item" />
+
+        <include
+            android:id="@+id/item_user_nickname"
+            layout="@layout/vw_discover_item" />
+
+        <include
+            android:id="@+id/item_user_teachAge"
+            layout="@layout/vw_discover_item" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="13dp" />
+
+        <include
+            android:id="@+id/item_user_record"
+            layout="@layout/vw_discover_item" />
+
+        <include
+            android:id="@+id/item_user_contact"
+            layout="@layout/vw_discover_item" />
+
+        <include
+            android:id="@+id/item_user_address"
+            layout="@layout/vw_discover_item" />
+    </LinearLayout>
+</ScrollView>

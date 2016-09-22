@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.idrv.coach.ui.view.CreateWebSiteErrorItemView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_rec_white_4dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="24.0dp"
+    android:paddingTop="24.0dp">
+
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/icon_profile_not_done"
+        android:drawablePadding="8.0dp"
+        android:text="@string/profile_not_done"
+        android:textColor="#666666"
+        android:textSize="15.0sp" />
+
+    <TextView
+        android:id="@+id/subject_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14.0sp"
+        android:text="@string/upload_qr_code_tips"
+        android:textColor="#999999"
+        android:textSize="12.0sp" />
+
+    <TextView
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="40.0dp"
+        android:layout_marginLeft="55.0dp"
+        android:layout_marginRight="55.0dp"
+        android:layout_marginTop="14.0dp"
+        android:background="@drawable/btn_complete_info"
+        android:gravity="center"
+        android:text="@string/complete_profile_info"
+        android:textColor="@color/themes_main" />
+</com.idrv.coach.ui.view.CreateWebSiteErrorItemView>

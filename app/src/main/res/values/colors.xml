@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--头部bar背景颜色-->
+    <color name="title_bar_background_color">#FFFDC800</color>
+    <color name="splash_bg_color">#2e2e2e</color>
+
+    <color name="bg_main">#f5f0eb</color>
+    <color name="themes_main">#d03b3b</color>
+    <color name="red_deep">#811613</color>
+    <color name="dynamic_item_bg">#f7f5f3</color>
+
+    <!-- toolbar-->
+    <color name="toolbar_bg">#FF2F2F2F</color>
+    <color name="toolbar_text_color">#ffffffff</color>
+
+    <color name="actionbar_background_start">#CD2626</color>
+    <color name="actionbar_background_end">#EB1818</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="yellow_arc">#fffdd600</color>
+    <color name="background_arc">#ffd7d7d7</color>
+
+    <color name="primary">#FF03A9F4</color>
+    <color name="primary_dark">#FF0288D1</color>
+    <color name="status_bar_color">@color/primary_dark</color>
+
+    <!--公共的字体颜色-->
+    <!--公共的字体颜色_87:表示透明度为87%-->
+    <color name="black_87">#df000000</color>
+    <color name="black_78">#c8000000</color>
+    <color name="black_54">#89000000</color>
+    <color name="black_51">#82000000</color>
+    <color name="black_20">#33000000</color>
+    <color name="black_52">#86000000</color>
+    <color name="black">#000000</color>
+    <color name="white_75">#BFFFFFFF</color>
+    <color name="white_54">#89ffffff</color>
+
+    <color name="style_color_primary">#2f2f2f</color>
+    <color name="style_color_primary_dark">#262626</color>
+    <color name="style_color_accent">#2f2f2f</color>
+
+    <color name="share_menu_bg">#5f000000</color>
+
+    <color name="btn_normal">#FFCA30</color>
+    <color name="btn_pressed">#ddad2b</color>
+
+    <color name="text_color_white">#FFFFFF</color>
+    <color name="task_receive_control">#ffcb41</color>
+
+    <!-- 横向分割线的颜色-->
+    <color name="h_divider_line_color">#dbdad9</color>
+    <!--竖向分割线的颜色 -->
+    <color name="v_divider_line_color">#dbdad9</color>
+</resources>

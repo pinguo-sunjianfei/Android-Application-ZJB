@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:fillViewport="true">
+
+        <FrameLayout
+            android:id="@+id/poster_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="55.0dp">
+
+        <TextView
+            android:id="@+id/buy_or_make_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#516cbc"
+            android:gravity="center"
+            android:text="@string/immediately_use"
+            android:textColor="@color/text_color_white"
+            android:textSize="16.0sp" />
+
+        <LinearLayout
+            android:id="@+id/bottom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/btn_re_make"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:background="#fcc523"
+                android:gravity="center"
+                android:text="@string/re_make"
+                android:textColor="@color/black"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:id="@+id/btn_share"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2.0"
+                android:background="#d13e3c"
+                android:gravity="center"
+                android:text="@string/share"
+                android:textColor="@color/text_color_white"
+                android:textSize="16.0sp" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

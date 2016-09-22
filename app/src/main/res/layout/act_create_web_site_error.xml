@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5ba0ff"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55.0dp"
+        android:src="@drawable/icon_error" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19.0dp"
+        android:text="@string/create_web_site_failed"
+        android:textColor="@color/text_color_white"
+        android:textSize="24.0sp" />
+
+    <include
+        android:id="@+id/item_profile"
+        layout="@layout/vw_create_web_site_failed_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20.0dp"
+        android:layout_marginRight="20.0dp"
+        android:layout_marginTop="@dimen/create_web_site_error_item_top_margin" />
+
+    <include
+        android:id="@+id/item_photo"
+        layout="@layout/vw_create_web_site_failed_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20.0dp"
+        android:layout_marginRight="20.0dp"
+        android:layout_marginTop="@dimen/create_web_site_error_item_top_margin" />
+    />
+
+</LinearLayout>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="3.0dp"
+        android:layout_marginLeft="20.0dp"
+        android:layout_marginRight="20.0dp"
+        android:layout_marginTop="2.0dp"
+        android:orientation="vertical"
+        app:cardBackgroundColor="@color/text_color_white"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="2.0dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/website_data_bg" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40.0dp"
+                    android:layout_gravity="center_vertical|left"
+                    android:layout_marginLeft="15.0dp"
+                    android:gravity="center"
+                    android:text="@string/website_data"
+                    android:textColor="@color/themes_main"
+                    android:textSize="13.0sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/h_divider_line_color" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="36.0dp"
+                    android:paddingTop="36.0dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/today_vis"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="789"
+                            android:textColor="@color/themes_main"
+                            android:textSize="21.0sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8.0dp"
+                            android:text="@string/ask_today"
+                            android:textColor="#2f2e2d"
+                            android:textSize="12.0sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/today_forwarding"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="998"
+                            android:textColor="@color/themes_main"
+                            android:textSize="21.0sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8.0dp"
+                            android:text="@string/forwards_today"
+                            android:textColor="#2f2e2d"
+                            android:textSize="12.0sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/h_divider_line_color" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="36.0dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/total_vis"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="45882"
+                            android:textColor="@color/themes_main"
+                            android:textSize="21.0sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8.0dp"
+                            android:text="@string/accumulated_be_accessed"
+                            android:textColor="#2f2e2d"
+                            android:textSize="12.0sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/total_forwarding"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="548489"
+                            android:textColor="@color/themes_main"
+                            android:textSize="21.0sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8.0dp"
+                            android:text="@string/accumulated_be_forwarded"
+                            android:textColor="#2f2e2d"
+                            android:textSize="12.0sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </android.support.v7.widget.CardView>
+</FrameLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_color_white"
+    android:orientation="horizontal"
+    android:paddingLeft="20.0dp"
+    android:paddingRight="20.0dp"
+    android:paddingTop="18.0dp">
+
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="40.0dp"
+        android:layout_height="40.0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/album_cover_default" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="11.0dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/nick_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="曾呼呼"
+            android:textColor="@color/black"
+            android:textSize="15.0sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8.0dp"
+            android:background="@drawable/comment_bg"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/content_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="这个教练真心不错哦,不信你就来试一试"
+                android:textColor="@color/black"
+                android:textSize="13.0sp" />
+
+            <View
+                android:id="@+id/h_divider_line"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="8.0dp"
+                android:background="#CFCFCF" />
+
+            <LinearLayout
+                android:id="@+id/contact_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+                <!-- 左侧 的按钮-->
+                <TextView
+                    android:id="@+id/tel_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30.0dp"
+                    android:gravity="center"
+                    android:paddingLeft="20.0dp"
+                    android:paddingRight="20.0dp"
+                    android:text="@string/contact_by_phone"
+                    android:textColor="@color/themes_main"
+                    android:textSize="13.0sp"
+                    android:visibility="visible" />
+                <!-- 中间的分割线-->
+                <View
+                    android:id="@+id/button_v_divider_line"
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="10.0dp"
+                    android:layout_marginRight="10.0dp"
+                    android:layout_marginTop="8.5dp"
+                    android:background="#cbcbcb" />
+                <!-- 右边 的按钮-->
+                <TextView
+                    android:id="@+id/sms_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30.0dp"
+                    android:gravity="center"
+                    android:paddingLeft="20.0dp"
+                    android:paddingRight="20.0dp"
+                    android:text="@string/contact_by_message"
+                    android:textColor="@color/themes_main"
+                    android:textSize="13.0sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

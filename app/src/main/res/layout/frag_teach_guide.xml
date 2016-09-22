@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/guide_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical"
+    android:paddingBottom="35.0dp">
+
+    <ImageView
+        android:id="@+id/guide_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:scaleType="fitXY" />
+
+    <Button
+        android:id="@+id/guide_btn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/guide_img"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginTop="20.0dp"
+        android:background="@drawable/btn_login_selector"
+        android:gravity="center"
+        android:minHeight="44dp"
+        android:text="@string/Iknowit"
+        android:textColor="@color/text_color_white"
+        android:visibility="gone" />
+</RelativeLayout>

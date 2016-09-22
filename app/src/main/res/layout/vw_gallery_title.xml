@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/image_back"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_centerVertical="true"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/cancel" />
+
+    <View
+        android:id="@+id/image_title_split"
+        android:layout_width="0.5dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@+id/image_back"
+        android:background="#77ffffff" />
+
+    <TextView
+        android:id="@+id/image_crop_title_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/image_title_split"
+        android:background="@drawable/gallery_confirm_bg"
+        android:drawablePadding="5.0dp"
+        android:drawableRight="@drawable/gallery_more"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxWidth="160dp"
+        android:paddingLeft="16dp"
+        android:singleLine="true"
+        android:text="@string/gallery_name"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/text_go_ahead"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/gallery_confirm_bg"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="@string/gallery_go_ahead"
+        android:textColor="@color/text_color_white"
+        android:textSize="16sp" />
+</merge>

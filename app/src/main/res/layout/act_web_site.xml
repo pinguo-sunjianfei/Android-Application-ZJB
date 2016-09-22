@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/indicator_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/website_indicator_height">
+
+        <com.idrv.coach.ui.widget.CircleIndicator
+            android:id="@+id/indicator"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="7.0dp"
+            android:visibility="gone"
+            app:ci_drawable="@drawable/indicator_selected"
+            app:ci_drawable_unselected="@drawable/indicator_normal" />
+    </FrameLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_layout"
+        android:layout_below="@+id/indicator_layout" />
+
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/website_bottom_padding"
+        android:paddingLeft="25.0dp"
+        android:paddingRight="25.0dp"
+        android:paddingTop="@dimen/website_bottom_padding">
+
+        <Button
+            android:id="@+id/btn_review"
+            android:layout_width="match_parent"
+            android:layout_height="44.0dp"
+            android:background="@drawable/btn_inquiry"
+            android:text="@string/reviews_my_website"
+            android:textColor="@color/inquiry_text_selector"
+            android:textSize="16.0sp" />
+
+        <Button
+            android:id="@+id/btn_share"
+            android:layout_width="match_parent"
+            android:layout_height="44.0dp"
+            android:layout_marginTop="@dimen/website_bottom_button_margin"
+            android:background="@drawable/btn_withdraw"
+            android:text="@string/share_to_my_student"
+            android:textColor="@color/text_color_white"
+            android:textSize="16.0sp" />
+    </LinearLayout>
+</RelativeLayout>

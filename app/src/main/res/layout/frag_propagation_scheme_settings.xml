@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30.0dp"
+        android:src="@drawable/option_1_title" />
+
+    <FrameLayout
+        android:id="@+id/content_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20.0dp"
+        android:layout_marginRight="20.0dp"
+        android:layout_marginTop="24.0dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2.0dp"
+            android:layout_marginTop="2.0dp"
+            android:background="@drawable/home_shadow">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="45.0dp"
+                android:paddingLeft="10.0dp"
+                android:paddingRight="10.0dp"
+                android:paddingTop="10.0dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_rectangle_bg_white_stroke_gray">
+
+                    <ImageView
+                        android:id="@+id/content_iv"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/propagation_mode_setting"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:background="@drawable/click_to_detail" />
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13.0dp"
+                    android:text="@string/conditions_of_use"
+                    android:textColor="#737271"
+                    android:textSize="13.0sp" />
+
+                <TextView
+                    android:id="@+id/desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8.0dp"
+                    android:text="@string/option_3"
+                    android:textColor="@color/black"
+                    android:textSize="13.0sp" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/enable_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:src="@drawable/use_now" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/btn_commit"
+        android:layout_width="190.0dp"
+        android:layout_height="45.0dp"
+        android:layout_marginTop="-23.0dp"
+        android:background="@drawable/btn_propagation_setting"
+        android:gravity="center"
+        android:text="@string/immediately_use"
+        android:textColor="@color/text_color_white"
+        android:textSize="16.0sp" />
+
+</LinearLayout>

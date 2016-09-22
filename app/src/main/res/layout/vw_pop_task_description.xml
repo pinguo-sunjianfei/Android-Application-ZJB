@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="right"
+    android:orientation="vertical"
+    android:paddingRight="16dp">
+
+    <TextView
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:background="#8c000000"
+        android:gravity="center"
+        android:paddingTop="12dp"
+        android:text="@string/task_desc"
+        android:textColor="#fff"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/pop_student_contacts"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:background="#8c000000"
+        android:padding="12dp"
+        android:textColor="#fff" />
+</LinearLayout>

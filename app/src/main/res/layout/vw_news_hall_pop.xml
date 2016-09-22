@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/news_help_pop_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="180.0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5.0dp"
+        android:layout_marginLeft="10.0dp"
+        android:layout_marginRight="10.0dp"
+        android:layout_marginTop="5.0dp"
+        android:text="@string/news_hall_help"
+        android:textColor="@color/text_color_white"
+        android:textSize="11.0sp" />
+    
+</FrameLayout>

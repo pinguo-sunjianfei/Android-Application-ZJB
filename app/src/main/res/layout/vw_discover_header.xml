@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.idrv.coach.ui.view.DiscoverGirdLayout
+        android:id="@+id/grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/themes_main"
+        app:item_count="1"
+        app:item_drawable="@drawable/list_item_red_bg"
+        app:item_margin="0dp"
+        app:item_row_view_count="3"
+        app:item_text_color="@color/text_color_white" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="90.0dp"
+        android:background="#F6F6F6"
+        android:paddingLeft="8.0dp"
+        android:paddingRight="8.0dp"
+        android:paddingTop="8.0dp">
+
+        <com.idrv.coach.ui.view.LoopViewPager
+            android:id="@+id/discover_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/default_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/banner_default" />
+    </FrameLayout>
+</LinearLayout>

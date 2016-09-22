@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dialog_title">提示</string>
+    <string name="dialog_message">对话框内容</string>
+    <string name="dialog_checkbox">选择</string>
+    <string name="dialog_off">移除</string>
+    <string name="dialog_cancel">取消</string>
+    <string name="dialog_confirm">确定</string>
+    <string name="dialog_i_know">我知道了</string>
+    <string name="dialog_edit_text_hint">请输入...</string>
+    <string name="dialog_loading">正在加载...</string>
+    <string name="check_update_default_content">新版本更新啦，赶快下载吧!</string>
+
+    <!-- 对话框默认文案-->
+    <string name="loading_txt">正在加载</string>
+    <string name="login_waiting">正在加载</string>
+    <string name="i_know">我知道了</string>
+    <string name="offline_msg">提示内容</string>
+    <string name="toast_title">提示标题</string>
+    <string name="check_update">检查更新</string>
+    <string name="doing_edit">正在处理，请稍候...</string>
+    <string name="doing_save">正在保存图片，请稍候...</string>
+    <string name="dlg_sex_male">男生</string>
+    <string name="dlg_sex_female">女生</string>
+    <!-- 分享 -->
+    <string name="weibo_share_success">微博分享成功</string>
+    <string name="weibo_share_cancel">微博分享取消</string>
+    <string name="weibo_share_fail">微博分享失败</string>
+    <string name="share_to">分享到</string>
+    <string name="share_subject">分享到你的学员群,提升影响力</string>
+    <string name="wx_friends">微信好友</string>
+    <string name="wx_timeline">微信朋友圈</string>
+    <string name="qq">QQ</string>
+
+    <string name="qq_share_success">QQ分享成功</string>
+    <string name="qq_share_cancel">QQ分享取消</string>
+    <string name="qq_share_fail">QQ分享失败</string>
+
+    <string name="weixin_share_success">微信分享成功</string>
+    <string name="weixin_share_cancel">微信分享取消</string>
+    <string name="weixin_share_fail">微信分享失败</string>
+
+    <string name="weixin_pay_success">支付成功</string>
+    <string name="weixin_pay_cancel">已取消支付</string>
+    <string name="weixin_pay_fail">支付失败</string>
+
+    <string name="web_title_default">温馨提示</string>
+    <string name="select_pic_error">选择图片异常,请联系客户</string>
+
+    <string name="already_newest_version">已是最新版本</string>
+    <string name="check_update_now">正在检查更新</string>
+    <string name="scheme_error">scheme跳转错误,请开发人员检查scheme配置</string>
+</resources>

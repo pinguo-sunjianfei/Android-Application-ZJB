@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="40.0dp"
+    android:layout_marginRight="40.0dp"
+    android:background="@drawable/shape_rec_white_4dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23.0dp"
+        android:gravity="center"
+        android:text="@string/share_news_to_advertise"
+        android:textColor="#5b5a58"
+        android:textSize="13.0sp" />
+
+    <TextView
+        android:id="@+id/num_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="46.0dp"
+        android:text="+99人"
+        android:textColor="@color/themes_main"
+        android:textSize="30.0sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8.0dp"
+        android:text="@string/views_your_adv"
+        android:textColor="@color/black"
+        android:textSize="13.0sp" />
+
+    <LinearLayout
+        android:id="@+id/avatar_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10.0dp"
+        android:layout_marginRight="10.0dp"
+        android:layout_marginTop="10.0dp"
+        android:background="@drawable/news_views_avatar_layout_bg"
+        android:orientation="horizontal">
+
+        <com.idrv.coach.ui.widget.SquareImageView
+            android:id="@+id/image_0"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:scaleType="centerCrop" />
+
+        <View
+            android:layout_width="10.0dp"
+            android:layout_height="match_parent" />
+
+        <com.idrv.coach.ui.widget.SquareImageView
+            android:id="@+id/image_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:scaleType="centerCrop" />
+
+        <View
+            android:layout_width="10.0dp"
+            android:layout_height="match_parent" />
+
+        <com.idrv.coach.ui.widget.SquareImageView
+            android:id="@+id/image_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:scaleType="centerCrop" />
+
+        <View
+            android:layout_width="10.0dp"
+            android:layout_height="match_parent" />
+
+        <com.idrv.coach.ui.widget.SquareImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:scaleType="centerCrop"
+            android:src="@drawable/avatar_more" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_view"
+        android:layout_width="match_parent"
+        android:layout_height="44.0dp"
+        android:layout_marginBottom="20.0dp"
+        android:layout_marginLeft="40.0dp"
+        android:layout_marginRight="40.0dp"
+        android:layout_marginTop="30.0dp"
+        android:background="@drawable/btn_withdraw"
+        android:text="@string/click_to_dynamic"
+        android:textColor="@color/text_color_white"
+        android:textSize="15.0sp" />
+</LinearLayout>

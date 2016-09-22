@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/text_color_white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/upload"
+        android:layout_width="match_parent"
+        android:layout_height="45.0dp"
+        android:layout_marginBottom="15.0dp"
+        android:layout_marginLeft="40.0dp"
+        android:layout_marginRight="40.0dp"
+        android:layout_marginTop="18.0dp"
+        android:background="@drawable/btn_complete_info"
+        android:gravity="center"
+        android:text="@string/upload_photo"
+        android:textColor="@color/themes_main"
+        android:textSize="16.0sp" />
+
+</LinearLayout>

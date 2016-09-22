@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20.0dp"
+        card_view:cardCornerRadius="2dp"
+        card_view:cardElevation="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/content_iv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spread_tool_image_height"
+                android:scaleType="centerCrop"
+                android:src="@drawable/album_cover_default" />
+
+            <LinearLayout
+                android:id="@+id/content_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12.0dp"
+                    android:layout_marginTop="13.0dp"
+                    android:text="@string/conditions_of_use"
+                    android:textColor="@color/text_color_white"
+                    android:textSize="13.0sp" />
+
+                <TextView
+                    android:id="@+id/desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12.0dp"
+                    android:layout_marginTop="8.0dp"
+                    android:ellipsize="end"
+                    android:maxLines="3"
+                    android:text="@string/option_3"
+                    android:textColor="@color/text_color_white"
+                    android:textSize="13.0sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15.0dp"
+                    android:paddingBottom="15.0dp">
+
+                    <TextView
+                        android:id="@+id/btn_preview"
+                        android:layout_width="115.0dp"
+                        android:layout_height="35.0dp"
+                        android:layout_toLeftOf="@+id/countdown_tv"
+                        android:background="@drawable/btn_white_border"
+                        android:gravity="center"
+                        android:text="@string/preview"
+                        android:textColor="@color/text_color_white"
+                        android:textSize="15.0sp" />
+
+                    <TextView
+                        android:id="@+id/countdown_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="13.0dp"
+                        android:layout_marginRight="15.0dp"
+                        android:drawableLeft="@drawable/icon_clock"
+                        android:drawablePadding="5.0dp"
+                        android:text="还剩0天"
+                        android:textColor="@color/text_color_white"
+                        android:textSize="13.0sp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:id="@+id/btn_activation"
+        android:layout_width="match_parent"
+        android:layout_height="44.0dp"
+        android:layout_marginLeft="60.0dp"
+        android:layout_marginRight="60.0dp"
+        android:layout_marginTop="@dimen/spread_tool_bottom_button_top_margin"
+        android:background="@drawable/btn_withdraw"
+        android:text="@string/immediately_use"
+        android:textColor="@color/text_color_white"
+        android:textSize="16.0sp" />
+
+</LinearLayout>

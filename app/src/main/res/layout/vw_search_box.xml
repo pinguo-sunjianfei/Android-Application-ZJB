@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8.0dp"
+        android:layout_marginRight="8.0dp"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="1dp">
+
+        <com.idrv.coach.ui.widget.ClearEditText
+            android:id="@+id/search_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/explore_title_search_background"
+            android:drawableLeft="@drawable/icon_search"
+            android:drawablePadding="7.0dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:hint="@string/pls_input_school_name"
+            android:imeOptions="actionSearch"
+            android:minHeight="40dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="8.0dp"
+            android:singleLine="true"
+            android:textColor="#FF000000"
+            android:textColorHint="#bbb9b7"
+            android:textSize="15sp" />
+    </android.support.v7.widget.CardView>
+</LinearLayout>

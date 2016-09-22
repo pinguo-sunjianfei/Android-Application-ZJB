@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.idrv.coach.ui.view.HomeHeaderLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/themes_main">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/with_draw_tv"
+            android:layout_marginLeft="45.0dp"
+            android:layout_marginTop="55.0dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/commission_balance"
+                android:textColor="@color/text_color_white"
+                android:textSize="13.0sp" />
+
+            <TextView
+                android:id="@+id/balance_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8.0dp"
+                android:text="100.00"
+                android:textColor="@color/text_color_white"
+                android:textSize="35.0sp" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/with_draw_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:drawablePadding="6.0dp"
+            android:drawableRight="@drawable/icon_master_item_right_arrow"
+            android:padding="14.0dp"
+            android:text="@string/details"
+            android:textColor="#e7dddd"
+            android:textSize="12.0sp" />
+    </com.idrv.coach.ui.view.HomeHeaderLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/text_color_white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="17.0dp"
+            android:paddingTop="17.0dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/current_credit"
+                android:textColor="#9d9996"
+                android:textSize="11.0sp" />
+
+            <TextView
+                android:id="@+id/current_credit_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8.0dp"
+                android:text="886"
+                android:textColor="@color/black"
+                android:textSize="18.0sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1.0px"
+            android:layout_height="match_parent"
+            android:background="@color/v_divider_line_color" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="17.0dp"
+            android:paddingTop="17.0dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/redeem"
+                android:textColor="#9d9996"
+                android:textSize="11.0sp" />
+
+            <TextView
+                android:id="@+id/btn_redeem"
+                android:layout_width="wrap_content"
+                android:layout_height="25.0dp"
+                android:layout_marginTop="5.0dp"
+                android:background="@drawable/btn_red_border"
+                android:gravity="center"
+                android:paddingLeft="8.0dp"
+                android:paddingRight="8.0dp"
+                android:text="@string/redeem_newest_spread_tool"
+                android:textColor="@color/themes_main"
+                android:textSize="11.0sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

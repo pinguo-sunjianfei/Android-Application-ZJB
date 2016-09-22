@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/record_notice_padding_top"
+        android:text="@string/record_notice" />
+
+    <com.idrv.coach.ui.widget.RecordLayout
+        android:id="@+id/record_recordLayout"
+        android:layout_width="154dp"
+        android:layout_height="154dp"
+        android:layout_marginTop="@dimen/record_play_margin_top"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/record_voice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_record_vol5"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/record_imgMicro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:src="@drawable/img_record_micro"
+            android:visibility="gone" />
+    </com.idrv.coach.ui.widget.RecordLayout>
+
+    <TextView
+        android:id="@+id/record_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="00:00"
+        android:textColor="#5d5959"
+        android:textSize="35sp" />
+
+    <TextView
+        android:id="@+id/record_notice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/record_error_margin_top"
+        android:textColor="@android:color/holo_red_dark"
+        tools:text="我是错误代码" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:orientation="horizontal">
+
+        <com.idrv.coach.ui.widget.RecorderClickBt
+            android:id="@+id/record_longBt"
+            android:layout_width="172dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/shape_record"
+            android:text="@string/press_long_record"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/record_save"
+        android:layout_width="172dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/shape_record_upload_unable"
+        android:clickable="false"
+        android:gravity="center"
+        android:text="@string/upload"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+</LinearLayout>

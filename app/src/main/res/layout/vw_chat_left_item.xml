@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/message_time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="15.0dp"
+        android:layout_marginTop="5.0dp"
+        android:background="@drawable/shape_rec_gray_2dp"
+        android:paddingBottom="3.0dp"
+        android:paddingLeft="8.0dp"
+        android:paddingRight="8.0dp"
+        android:paddingTop="3.0dp"
+        android:text="2016-7-16"
+        android:textColor="#66ffffff"
+        android:textSize="11.0sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.joooonho.SelectableRoundedImageView
+                android:id="@+id/avatar"
+                android:layout_width="51.0dp"
+                android:layout_height="51.0dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/album_cover_default"
+                app:sriv_left_bottom_corner_radius="15dip"
+                app:sriv_left_top_corner_radius="15dip"
+                app:sriv_oval="false"
+                app:sriv_right_bottom_corner_radius="15dip"
+                app:sriv_right_top_corner_radius="15dip" />
+
+            <TextView
+                android:id="@+id/nick_name"
+                android:layout_width="60.0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9.0dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="教练圈"
+                android:textColor="@color/text_color_white"
+                android:textSize="11.0sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/sub_nick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4.0dp"
+                android:text="(助驾帮)"
+                android:textColor="#d3d3d3"
+                android:textSize="12.0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16.0dp"
+            android:orientation="vertical">
+
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40.0dp"
+                android:layout_marginTop="6.0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/bubble_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10.0dp"
+                        android:background="@drawable/bubble_default"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <!--左边的图片-->
+                            <ImageView
+                                android:id="@+id/image_1"
+                                android:layout_width="70.0dp"
+                                android:layout_height="70.0dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginRight="12.0dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/album_cover_default"
+                                android:visibility="visible" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1.0"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:paddingBottom="15.0dp"
+                                android:paddingTop="15.0dp">
+
+                                <!--标题-->
+                                <TextView
+                                    android:id="@+id/text_2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="left|center_vertical"
+                                    android:minEms="8"
+                                    android:maxEms="13"
+                                    android:paddingBottom="16.0dp"
+                                    android:text="这其实是个标题"
+                                    android:textColor="#292725"
+                                    android:textSize="14.0sp"
+                                    android:visibility="visible" />
+
+                                <!--内容-->
+                                <TextView
+                                    android:id="@+id/text_3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left|center_vertical"
+                                    android:minEms="8"
+                                    android:maxEms="13"
+                                    android:text=""
+                                    android:textColor="#292725"
+                                    android:textSize="14.0sp"
+                                    android:visibility="visible" />
+                            </LinearLayout>
+
+                            <FrameLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical">
+
+                                <!--右边的图片-->
+                                <ImageView
+                                    android:id="@+id/image_5"
+                                    android:layout_width="70.0dp"
+                                    android:layout_height="70.0dp"
+                                    android:layout_marginLeft="11.0dp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/album_cover_default"
+                                    android:visibility="visible" />
+
+                                <!--右边的头像和昵称-->
+                                <include
+                                    android:id="@+id/image_4"
+                                    layout="@layout/vw_username_and_avatar"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="13.0dp"
+                                    android:visibility="gone" />
+                            </FrameLayout>
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/label_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10.0dp"
+                            android:visibility="visible">
+
+                            <TextView
+                                android:id="@+id/text_7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="right|center_vertical"
+                                android:singleLine="true"
+                                android:text="去签到 >"
+                                android:textColor="@color/themes_main"
+                                android:textSize="12.0sp" />
+
+                            <TextView
+                                android:id="@+id/text_6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="left|center_vertical"
+                                android:singleLine="true"
+                                android:text="签到后可以生成签到日记"
+                                android:textColor="#828282"
+                                android:textSize="10.0sp" />
+                        </RelativeLayout>
+
+                        <View
+                            android:id="@+id/button_h_divider_line"
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:background="#CFCFCF"
+                            android:visibility="gone" />
+
+                        <LinearLayout
+                            android:id="@+id/dialog_bottom"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/dlg_corner"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <!-- 左侧 的按钮-->
+                            <TextView
+                                android:id="@+id/text_8"
+                                style="@style/Chat_item_red_text"
+                                android:visibility="visible" />
+                            <!-- 中间的分割线-->
+                            <ImageView
+                                android:id="@+id/button_v_divider_line"
+                                android:layout_width="1px"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="8.5dp"
+                                android:layout_marginTop="8.5dp"
+                                android:layout_weight="0"
+                                android:background="#cbcbcb" />
+                            <!-- 右边 的按钮-->
+                            <TextView
+                                android:id="@+id/text_9"
+                                style="@style/Chat_item_red_text"
+                                android:visibility="visible" />
+                            <!-- 大按钮-->
+                            <TextView
+                                android:id="@+id/text10"
+                                style="@style/Chat_item_red_text"
+                                android:visibility="gone" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7.0dp"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/text12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right|center_vertical"
+                            android:singleLine="true"
+                            android:text="评论已存到教练空间"
+                            android:textColor="#afafaf"
+                            android:textSize="12.0sp" />
+
+                        <ImageView
+                            android:id="@+id/image11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8.0dp"
+                            android:src="@drawable/icon_clock" />
+                    </FrameLayout>
+                </LinearLayout>
+
+                <!--右上角的标签-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|top"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="更为各位"
+                        android:textSize="10.0sp"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:id="@+id/image13"
+                        android:layout_width="58.0dp"
+                        android:layout_height="20.0dp"
+                        android:layout_marginTop="4.0dp"
+                        android:src="@drawable/sticker_default"
+                        android:visibility="visible" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

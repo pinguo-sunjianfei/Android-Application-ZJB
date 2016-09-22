@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    android:orientation="vertical">
+
+    <com.idrv.coach.ui.widget.SwipeRefreshLayout
+        android:id="@+id/refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.idrv.coach.ui.widget.EmptyRecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.idrv.coach.ui.widget.SwipeRefreshLayout>
+
+
+    <FrameLayout
+        android:id="@+id/empty_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="190.0dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dynamic_no_message" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.0dp"
+                android:text="@string/no_dynamic_message"
+                android:textColor="@color/black_54"
+                android:textSize="14.0sp" />
+
+            <Button
+                android:id="@+id/share_btn"
+                android:layout_width="match_parent"
+                android:layout_height="44.0dp"
+                android:layout_marginLeft="60.0dp"
+                android:layout_marginRight="60.0dp"
+                android:layout_marginTop="30.0dp"
+                android:background="@drawable/btn_withdraw"
+                android:text="@string/share_news"
+                android:textColor="@color/text_color_white"
+                android:textSize="16.0sp" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/title_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:background="@android:color/transparent">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left|center_vertical"
+            android:paddingLeft="15.0dp"
+            android:paddingRight="15.0dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/dynamic_title"
+            android:textColor="@color/text_color_white"
+            android:textSize="20.0sp" />
+    </FrameLayout>
+</FrameLayout>

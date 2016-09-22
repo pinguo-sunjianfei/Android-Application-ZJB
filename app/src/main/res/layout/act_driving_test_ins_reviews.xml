@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/text_color_white"
+        android:orientation="vertical"
+        android:paddingBottom="10.0dp"
+        android:paddingLeft="20.0dp"
+        android:paddingRight="20.0dp"
+        android:paddingTop="16.0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/left_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10.0dp"
+                android:src="@drawable/img_fangbaoxian" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/left_image"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/ins_num_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="@string/ins_num"
+                    android:textColor="@color/black_87"
+                    android:textSize="14.0sp" />
+
+
+                <TextView
+                    android:id="@+id/apply_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6.0dp"
+                    android:text="@string/apply_time"
+                    android:textColor="@color/black_54"
+                    android:textSize="13.0sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.0px"
+            android:layout_marginBottom="15.0dp"
+            android:layout_marginTop="15.0dp"
+            android:background="@color/h_divider_line_color" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="130.0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/insured_name"
+                android:textColor="@color/black_54"
+                android:textSize="13.0sp" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dp"
+                android:text="张三"
+                android:textColor="@color/black_87"
+                android:textSize="13.0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.0dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="130.0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/insured_id_card"
+                android:textColor="@color/black_54"
+                android:textSize="13.0sp" />
+
+            <TextView
+                android:id="@+id/id_card_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dp"
+                android:text="500230199110120450"
+                android:textColor="@color/black_87"
+                android:textSize="13.0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.0dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="130.0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/insured_tel"
+                android:textColor="@color/black_54"
+                android:textSize="13.0sp" />
+
+            <TextView
+                android:id="@+id/tel_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dp"
+                android:text="15982382099"
+                android:textColor="@color/black_87"
+                android:textSize="13.0sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.0px"
+            android:layout_marginBottom="15.0dp"
+            android:layout_marginTop="8.0dp"
+            android:background="@color/h_divider_line_color" />
+
+        <TextView
+            android:id="@+id/total_price_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="@string/total_price"
+            android:textColor="@android:color/black"
+            android:textSize="18.0sp" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/item_wx_pay"
+        layout="@layout/vw_discover_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15.0dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20.0dp"
+        android:layout_marginRight="20.0dp"
+        android:layout_marginTop="6.0dp"
+        android:text="@string/pay_tips"
+        android:textColor="@color/black_54"
+        android:textSize="13.0sp" />
+
+
+</LinearLayout>
