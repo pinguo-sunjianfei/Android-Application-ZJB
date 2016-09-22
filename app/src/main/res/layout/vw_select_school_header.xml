@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="25.0dp"
+    android:layout_marginTop="10.0dp"
+    android:background="@color/bg_main"
+    android:gravity="left|center_vertical"
+    android:paddingLeft="17.0dp"
+    android:text="@string/select_school_tips"
+    android:textColor="#7c7a78"
+    android:textSize="13.0sp" />

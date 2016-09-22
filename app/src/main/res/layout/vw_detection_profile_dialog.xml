@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="40.0dp"
+    android:layout_marginRight="40.0dp"
+    android:background="@drawable/shape_rec_white_4dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="12.0dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20.0dp"
+        android:text="@string/website_perfection_profile"
+        android:textColor="@color/black"
+        android:textSize="15.0sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13.0dp"
+        android:src="@drawable/detection_profile_header" />
+
+    <include
+        android:id="@+id/item_school"
+        layout="@layout/vw_discover_item" />
+
+    <include
+        android:id="@+id/item_teach_age"
+        layout="@layout/vw_discover_item" />
+
+    <Button
+        android:id="@+id/btn_close"
+        android:layout_width="match_parent"
+        android:layout_height="44.0dp"
+        android:layout_marginLeft="20.0dp"
+        android:layout_marginRight="20.0dp"
+        android:layout_marginTop="15.0dp"
+        android:background="@drawable/btn_withdraw"
+        android:text="@string/close"
+        android:textColor="@color/text_color_white"
+        android:textSize="16.0sp" />
+</LinearLayout>

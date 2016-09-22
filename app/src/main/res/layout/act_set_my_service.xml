@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/text_color_white"
+        android:orientation="vertical"
+        android:paddingLeft="20.0dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8.0dp"
+            android:layout_marginTop="12.0dp"
+            android:text="@string/provide_services"
+            android:textColor="#9f9d9c"
+            android:textSize="12.0sp" />
+
+        <FrameLayout
+            android:id="@+id/service_add_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.idrv.coach.ui.widget.EmptyRecyclerView
+                android:id="@+id/added_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never" />
+
+            <TextView
+                android:id="@+id/add_empty_view"
+                android:layout_width="match_parent"
+                android:layout_height="90.0dp"
+                android:gravity="center"
+                android:text="@string/add_services"
+                android:textColor="#d9d6d3"
+                android:textSize="15.0sp"
+                android:visibility="gone" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13.0dp"
+        android:background="@color/text_color_white"
+        android:orientation="vertical"
+        android:paddingLeft="20.0dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8.0dp"
+            android:layout_marginTop="12.0dp"
+            android:text="@string/services_can_be_add"
+            android:textColor="#9f9d9c"
+            android:textSize="12.0sp" />
+
+        <FrameLayout
+            android:id="@+id/service_select_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.idrv.coach.ui.widget.EmptyRecyclerView
+                android:id="@+id/select_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never" />
+
+            <TextView
+                android:id="@+id/select_empty_view"
+                android:layout_width="match_parent"
+                android:layout_height="90.0dp"
+                android:gravity="center"
+                android:textColor="#d9d6d3"
+                android:textSize="15.0sp"
+                android:visibility="gone" />
+        </FrameLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

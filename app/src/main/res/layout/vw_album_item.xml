@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/my_album_bg">
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/photo_desc_bg"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="21.0dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/my_photo"
+            android:textColor="@color/text_color_white"
+            android:textSize="15.0sp" />
+
+        <TextView
+            android:id="@+id/pic_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6.0dp"
+            android:text="0张照片"
+            android:textColor="@color/text_color_white"
+            android:textSize="10.0sp" />
+    </LinearLayout>
+</FrameLayout>

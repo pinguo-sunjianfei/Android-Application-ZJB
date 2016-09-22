@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1.0"
+        android:paddingTop="6.0dp">
+
+        <com.idrv.coach.ui.view.ProgressWebView
+            android:id="@+id/web_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="3.0dp"
+            android:max="100"
+            android:progressDrawable="@drawable/progress_bg" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/bottom_btn"
+        android:layout_width="match_parent"
+        android:layout_height="55.0dp"
+        android:background="@color/themes_main"
+        android:textSize="16.0sp"
+        android:gravity="center"
+        android:text="立即使用"
+        android:textColor="@color/text_color_white" />
+</LinearLayout>

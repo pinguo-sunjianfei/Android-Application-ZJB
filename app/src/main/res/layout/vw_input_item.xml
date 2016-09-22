@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.idrv.coach.ui.view.InputItemView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_color_white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/left_tv"
+            android:layout_width="100.0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20.0dp"
+            android:gravity="left"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:text="@string/bank"
+            android:textColor="@color/black_78"
+            android:textSize="15sp" />
+
+        <com.idrv.coach.ui.widget.ClearEditText
+            android:id="@+id/input_edit"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="@string/pls_input_bank_name"
+            android:paddingBottom="12dp"
+            android:paddingLeft="8.0dp"
+            android:paddingRight="8dp"
+            android:paddingTop="12dp"
+            android:textColor="@color/black_78"
+            android:textColorHint="#33000000"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/h_line"
+        android:layout_width="match_parent"
+        android:layout_height="1.0px"
+        android:layout_marginLeft="20.0dp"
+        android:background="@color/h_divider_line_color" />
+</com.idrv.coach.ui.view.InputItemView>

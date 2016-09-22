@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/text_color_white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="33.0dp">
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25.0dp"
+            android:ellipsize="end"
+            android:maxLength="18"
+            android:singleLine="true"
+            android:text="@string/vw_exchange_title"
+            android:textColor="@color/black"
+            android:textSize="18.0sp" />
+
+        <TextView
+            android:id="@+id/subtitle_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dp"
+            android:text="动感影集制作"
+            android:textColor="@color/themes_main"
+            android:textSize="14.0sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30.0dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_member"
+                android:layout_width="match_parent"
+                android:layout_height="44.0dp"
+                android:layout_marginLeft="25.0dp"
+                android:layout_marginRight="25.0dp"
+                android:background="@drawable/btn_withdraw"
+                android:text="@string/points_free"
+                android:textColor="@color/text_color_white"
+                android:textSize="16.0sp"
+                android:visibility="gone" />
+
+
+            <Button
+                android:id="@+id/btn_integral"
+                android:layout_width="match_parent"
+                android:layout_height="44.0dp"
+                android:layout_marginLeft="25.0dp"
+                android:layout_marginRight="25.0dp"
+                android:layout_marginTop="14.0dp"
+                android:background="@drawable/btn_withdraw"
+                android:text="使用积分兑换,(20积分)"
+                android:textColor="@color/text_color_white"
+                android:textSize="16.0sp" />
+
+
+            <FrameLayout
+                android:id="@+id/other_layout"
+                android:layout_width="match_parent"
+                android:layout_height="44.0dp"
+                android:layout_marginLeft="25.0dp"
+                android:layout_marginRight="25.0dp"
+                android:layout_marginTop="14.0dp"
+                android:background="@drawable/btn_inquiry">
+
+                <TextView
+                    android:id="@+id/btn_other"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawablePadding="8.0dp"
+                    android:text="使用佣金支付(￥20)"
+                    android:textColor="@color/inquiry_text_selector"
+                    android:textSize="16.0sp" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

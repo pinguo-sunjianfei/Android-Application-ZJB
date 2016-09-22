@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/avatar_iv"
+            android:layout_width="75.0dp"
+            android:layout_height="75.0dp"
+            android:layout_gravity="center" />
+
+        <ImageView
+            android:id="@+id/background_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/num_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-25dp">
+
+        <ImageView
+            android:id="@+id/chassis_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24.0dp"
+            android:src="@drawable/the_top_six_bottom_image"
+            android:visibility="gone" />
+
+        <com.idrv.coach.ui.view.CircleTextView
+            android:id="@+id/circle_tv"
+            android:layout_width="26.0dp"
+            android:layout_height="26.0dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/black"
+            android:textSize="19.0sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/nick_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8.0dp"
+        android:ellipsize="end"
+        android:maxWidth="80.0dp"
+        android:singleLine="true"
+        android:text="曾教练"
+        android:textColor="@color/text_color_white"
+        android:textSize="13.0sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/teach_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dp"
+        android:text="教龄 6年"
+        android:textColor="#f4e1e4"
+        android:textSize="10.0sp" />
+
+    <TextView
+        android:id="@+id/school_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="蜀安驾校 教龄 6年"
+        android:textColor="#f4e1e4"
+        android:textSize="10.0sp" />
+</LinearLayout>

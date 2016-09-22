@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center_horizontal"
+              android:background="@android:color/white"
+              android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/new_function"
+        android:textColor="#2b2b2b"
+        android:textSize="17sp"/>
+
+    <View
+        android:layout_width="150dp"
+        android:layout_height="1px"
+        android:layout_marginTop="10dp"
+        android:background="#1d1c1b"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="25dp"
+        android:lineSpacingExtra="3dp"
+        android:text="@string/new_function_introduce"
+        android:textColor="#545353"
+        android:textSize="14sp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/img_team_show"/>
+
+    <Button
+        android:id="@+id/dlg_newfunction_know_bt"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/Iknowit"
+        android:textColor="@android:color/white"
+        android:background="@drawable/btn_red"
+        android:textSize="16sp"/>
+
+</LinearLayout>

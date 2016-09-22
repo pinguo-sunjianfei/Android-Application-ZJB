@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <com.idrv.coach.ui.widget.FixedViewPager
+        android:id="@+id/photo_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:background="@color/black">
+
+        <FrameLayout
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/photo_delete_bg">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="20.0dp"
+                android:paddingRight="20.0dp"
+                android:src="@drawable/back" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/photo_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:background="@drawable/photo_delete_bg">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="20.0dp"
+                android:paddingRight="20.0dp"
+                android:src="@drawable/photo_delete" />
+        </FrameLayout>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/page_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="50.0dp"
+        android:gravity="center"
+        android:text="1/100"
+        android:textColor="@color/text_color_white"
+        android:textSize="18.0sp" />
+</FrameLayout>

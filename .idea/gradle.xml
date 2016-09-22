@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="LOCAL" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleHome" value="E:\android-studio-ide-145.3240973-windows\android-studio\gradle\gradle-2.14.1" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/extras" />
+            <option value="$PROJECT_DIR$/extras/zjb-image-loader" />
+            <option value="$PROJECT_DIR$/extras/zjb-js-bridge" />
+            <option value="$PROJECT_DIR$/extras/zjb-mp3recorder" />
+            <option value="$PROJECT_DIR$/extras/zjb-sync-volley" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

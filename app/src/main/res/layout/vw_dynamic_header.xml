@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/text_color_white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="190.0dp"
+        android:background="@color/themes_main"
+        android:paddingBottom="10.0dp">
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="60.0dp"
+            android:layout_height="60.0dp"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/avatar_circle_default" />
+
+        <TextView
+            android:id="@+id/name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/avatar"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="8.0dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="赵文卓"
+            android:textColor="@color/text_color_white"
+            android:textSize="14.0sp" />
+
+        <TextView
+            android:id="@+id/like_count_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name_tv"
+            android:layout_centerHorizontal="true"
+            android:drawableLeft="@drawable/icon_good_for_header"
+            android:drawablePadding="5.0dp"
+            android:gravity="center_vertical"
+            android:text="3000"
+            android:textColor="@color/text_color_white"
+            android:textSize="14.0sp" />
+
+        <ImageView
+            android:id="@+id/invite_bubble"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10.0dp"
+            android:src="@drawable/icon_message" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="13.0dp"
+        android:background="@color/bg_main" />
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:background="@drawable/title_shadow">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left|center_vertical"
+            android:paddingLeft="15.0dp"
+            android:paddingRight="15.0dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/ins_now"
+            android:textColor="@color/text_color_white"
+            android:textSize="18.0sp" />
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20.0dp"
+        android:gravity="left"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:text="@string/pls_input_insured_info"
+        android:textColor="@color/black_54"
+        android:textSize="12sp" />
+
+    <include
+        android:id="@+id/item_owner_name"
+        layout="@layout/vw_input_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <include
+        android:id="@+id/item_tel"
+        layout="@layout/vw_input_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <include
+        android:id="@+id/item_card"
+        layout="@layout/vw_input_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20.0dp"
+        android:gravity="left"
+        android:paddingBottom="8dp"
+        android:paddingTop="6.0dp"
+        android:text="@string/drive_ins_tips"
+        android:textColor="@color/themes_main"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/next_step"
+        android:layout_width="match_parent"
+        android:layout_height="44.0dp"
+        android:layout_marginLeft="20.0dp"
+        android:layout_marginRight="20.0dp"
+        android:layout_marginTop="40.0dp"
+        android:background="@drawable/btn_withdraw"
+        android:text="@string/ins_now"
+        android:textColor="@color/text_color_white"
+        android:textSize="16.0sp" />
+
+</LinearLayout>

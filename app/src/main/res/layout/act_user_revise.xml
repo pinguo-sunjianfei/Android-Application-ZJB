@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    tools:context="com.idrv.coach.ui.UserReviseActivity">
+
+    <EditText
+        android:id="@+id/user_textRivse_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:background="@android:color/white"
+        android:gravity="top"
+        android:maxLength="18"
+        android:minHeight="41dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="12dp"
+        android:textColor="#2b2b2b"
+        android:textSize="14sp"
+        android:textColorHint="#bbb"
+        tools:hint="@string/item_user_nickname"/>
+
+    <ImageView
+        android:id="@+id/user_textRivse_clearIv"
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="17dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:visibility="gone"
+        android:src="@drawable/ic_edit_clear"/>
+
+    <TextView
+        android:id="@+id/user_textRivse_showTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/user_textRivse_et"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="6dp"
+        android:text="18"
+        android:textColor="#888"
+        android:textSize="11sp"/>
+</RelativeLayout>

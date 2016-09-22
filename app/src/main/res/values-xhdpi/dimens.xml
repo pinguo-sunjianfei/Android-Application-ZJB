@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="title_bar_height">55dp</dimen>
+    <dimen name="title_bar_content_margin_top">-6dp</dimen>
+
+    <!-- dlg_base的布局 !-->
+    <dimen name="dialog_title_margin_top">24dp</dimen>
+    <dimen name="dialog_title_margin_bottom">20dp</dimen>
+    <dimen name="dialog_title_margin_left">24dp</dimen>
+    <dimen name="dialog_title_text_size">15sp</dimen>
+    <dimen name="dialog_title_heigth">52dp</dimen>
+    <dimen name="dialog_edit_padding">10dp</dimen>
+    <dimen name="dialog_msg_text_size">13sp</dimen>
+    <dimen name="dialog_msg_min_width">70dp</dimen>
+    <dimen name="dialog_msg_margin_left">15dp</dimen>
+    <dimen name="dialog_msg_margin_top">27dp</dimen>
+    <dimen name="dialog_corner_radius">4dp</dimen>
+    <dimen name="dialog_width_margin">50dp</dimen>
+    <dimen name="dialog_radio_margin">56dp</dimen>
+    <dimen name="like_author_margin">10dp</dimen>
+
+    <dimen name="task_pic_h">340dp</dimen>
+    <dimen name="avatar_marginTop1">38dp</dimen>
+    <dimen name="avatar_marginTop2">48dp</dimen>
+    <dimen name="record_notice_padding_top">26dp</dimen>
+    <dimen name="record_play_margin_top">48dp</dimen>
+    <dimen name="record_error_margin_top">32dp</dimen>
+
+    <!-- 标题高度 -->
+    <dimen name="crop_image_title_height">55dp</dimen>
+    <dimen name="gallery_pop_item_height">46dp</dimen>
+    <dimen name="gallery_pop_item_name">18sp</dimen>
+
+    <dimen name="website_indicator_height">45dp</dimen>
+    <dimen name="website_bottom_item_height">60.0dp</dimen>
+    <dimen name="website_bottom_padding">25.0dp</dimen>
+    <dimen name="website_bottom_button_margin">15.0dp</dimen>
+    <dimen name="create_web_site_error_item_top_margin">20.0dp</dimen>
+    <dimen name="propagation_mode_setting">300.0dp</dimen>
+    <dimen name="create_website_success_photo_top_margin">25.0dp</dimen>
+    <dimen name="create_website_success_photo_bottom_padding">40.0dp</dimen>
+    <dimen name="create_website_success_text_top_margin">36.0dp</dimen>
+    <dimen name="create_website_success_title_top_margin">20.0dp</dimen>
+    <dimen name="spread_tool_image_height">300.0dp</dimen>
+    <dimen name="spread_tool_bottom_button_top_margin">25.0dp</dimen>
+    <dimen name="photo_wall_header_viewpager_margin">60.0dp</dimen>
+    <dimen name="coach_auth_padding">18.0dp</dimen>
+    <dimen name="coach_auth_card_top_margin">25.0dp</dimen>
+    <dimen name="coach_auth_text_view_top_margin">15.0dp</dimen>
+</resources>

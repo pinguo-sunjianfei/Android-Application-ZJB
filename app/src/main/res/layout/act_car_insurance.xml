@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_main"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="25.0dp"
+            android:layout_marginRight="25.0dp"
+            android:layout_marginTop="50.0dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/car_insurance" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dp"
+            android:orientation="vertical"
+            android:paddingLeft="25.0dp"
+            android:paddingRight="25.0dp"
+            android:paddingTop="25.0dp">
+
+            <Button
+                android:id="@+id/btn_inquiry"
+                android:layout_width="match_parent"
+                android:layout_height="44.0dp"
+                android:layout_marginTop="6.0dp"
+                android:background="@drawable/btn_withdraw"
+                android:text="@string/has_inquiry"
+                android:textColor="@color/text_color_white"
+                android:textSize="16.0sp" />
+
+            <Button
+                android:id="@+id/btn_has_inquiry"
+                android:layout_width="match_parent"
+                android:layout_height="44.0dp"
+                android:layout_marginTop="15.0dp"
+                android:background="@drawable/btn_inquiry"
+                android:text="@string/quick_quote"
+                android:textColor="@color/inquiry_text_selector"
+                android:textSize="16.0sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20.0dp"
+            android:layout_marginLeft="25.0dp"
+            android:layout_marginRight="25.0dp"
+            android:layout_marginTop="14.0dp"
+            android:text="@string/ins_default_tips"
+            android:textColor="#888888"
+            android:textSize="11.0sp" />
+    </LinearLayout>
+</ScrollView>

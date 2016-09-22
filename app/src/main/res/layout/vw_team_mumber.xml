@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/item_teamMember_imgLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp">
+
+        <ImageView
+            android:id="@+id/item_teamMember_avatarIV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="3dp"
+            tools:src="@drawable/img_logo" />
+
+        <View
+            android:id="@+id/item_teamMember_mask"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#9fff" />
+
+        <ImageView
+            android:id="@+id/item_teamMember_choosedIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:src="@drawable/icon_team_choosed"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/item_teamMember_nameTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dp"
+        android:ellipsize="end"
+        android:maxLength="5"
+        android:maxWidth="50.0dp"
+        android:singleLine="true"
+        android:textColor="#888"
+        android:textSize="10sp"
+        tools:text="姓名" />
+
+    <TextView
+        android:id="@+id/join_status_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4.0dp"
+        android:ellipsize="end"
+        android:maxLength="5"
+        android:singleLine="true"
+        android:text="@string/wait_join"
+        android:textColor="#888"
+        android:textSize="7sp"
+        android:visibility="gone" />
+
+</LinearLayout>

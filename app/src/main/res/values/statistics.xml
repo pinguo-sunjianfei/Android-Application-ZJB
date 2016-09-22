@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--统计-->
+    <string name="click_qq">Click_QQ</string>
+    <string name="click_explore_activity">Click_ExploreActivity</string>
+    <string name="visit_home_educate_h5">Visit_HomeEducateH5</string>
+    <string name="share_explore_activity">Share_ExploreActivity</string>
+    <string name="share_my_site">Share_Mysite</string>
+    <string name="share_my_site_preview">Share_MysitePreview</string>
+    <string name="share_home_educate_h5">Share_HomeeducateH5</string>
+    <string name="share_stu_insurance">Share_StInsurance</string>
+    <string name="click_upload">Click_Upload</string>
+    <string name="click_my_site">Click_Mysite</string>
+    <string name="visit_album">Click_Album</string>
+    <string name="visit_wallet">Click_Wallet</string>
+    <string name="share_news_hall">share_NewsHall</string>
+    <string name="share_news_preview">share_NewsPreview</string>
+    <string name="click_generate">Click_Generate</string>
+    <string name="spread_setting">Spread_Setting</string>
+    <string name="click_MyWeek">MyWeek</string>
+    <string name="share_myWeek">Share_MyWeek</string>
+    <string name="spread2">Spread2</string>
+    <string name="spread3">Spread3</string>
+    <string name="Click_windows_view_news">Click_Windowsviewnews</string>
+    <string name="Click_home_news">Click_Homenews</string>
+    <string name="Click_Coach_Circle">Click_Coachcircle</string>
+    <string name="Click_Explore_news">Click_Explorenews</string>
+    <string name="Click_Preview_My_site">Click_PreviewMysite</string>
+    <string name="Click_Reward">Click_Reward</string>
+</resources>
+

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="-3dp"
+    android:layout_marginRight="-3dp"
+    android:background="@color/text_color_white"
+    android:orientation="vertical"
+    app:cardBackgroundColor="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dp"
+            android:layout_marginRight="10.0dp"
+            android:layout_marginTop="15.0dp">
+
+            <FrameLayout
+                android:id="@+id/avatar_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10.0dp">
+
+                <ImageView
+                    android:id="@+id/avatar"
+                    android:layout_width="45.0dp"
+                    android:layout_height="45.0dp"
+                    android:layout_marginBottom="5.0dp"
+                    android:layout_marginRight="5.0dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/icon_user_avatar_default_92" />
+
+                <ImageView
+                    android:id="@+id/my_team_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|bottom"
+                    android:src="@drawable/icon_my_team" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/nick_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2.0dp"
+                android:layout_toRightOf="@+id/avatar_layout"
+                android:ellipsize="end"
+                android:maxWidth="150.0dp"
+                android:singleLine="true"
+                android:textColor="@color/black_87"
+                android:textSize="14.0sp" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6.0dp"
+                android:layout_marginTop="2.0dp"
+                android:layout_toRightOf="@id/nick_name"
+                android:text="今天 11:00"
+                android:textColor="#92908e"
+                android:textSize="12.0sp" />
+
+            <TextView
+                android:id="@+id/subject_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nick_name"
+                android:layout_marginTop="8.0dp"
+                android:layout_toRightOf="@+id/avatar_layout"
+                android:text="加入了团队"
+                android:textColor="#161616"
+                android:textSize="14.0sp" />
+
+            <ImageView
+                android:id="@+id/like_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:padding="5.0dp"
+                android:src="@drawable/icon_good_off" />
+
+            <LinearLayout
+                android:id="@+id/like_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/avatar_layout"
+                android:layout_toRightOf="@+id/avatar_layout"
+                android:orientation="vertical">
+
+                <View
+                    android:id="@+id/h_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginBottom="8.0dp"
+                    android:layout_marginTop="8.0dp"
+                    android:background="@color/h_divider_line_color" />
+
+                <TextView
+                    android:id="@+id/like_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textColor="#92908e"
+                    android:textSize="11.0sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

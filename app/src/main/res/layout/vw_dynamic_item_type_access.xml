@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="-3dp"
+    android:layout_marginRight="-3dp"
+    android:background="@color/text_color_white"
+    android:orientation="vertical"
+    app:cardBackgroundColor="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dp"
+            android:layout_marginRight="10.0dp"
+            android:layout_marginTop="15.0dp">
+
+            <ImageView
+                android:id="@+id/avatar"
+                android:layout_width="45.0dp"
+                android:layout_height="45.0dp"
+                android:layout_marginRight="10.0dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/icon_user_avatar_default_92" />
+
+            <TextView
+                android:id="@+id/nick_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2.0dp"
+                android:layout_toRightOf="@+id/avatar"
+                android:ellipsize="end"
+                android:maxWidth="150.0dp"
+                android:singleLine="true"
+                android:textColor="@color/black_87"
+                android:textSize="14.0sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dp"
+                android:layout_marginTop="2.0dp"
+                android:layout_toRightOf="@+id/nick_name"
+                android:text="分享的资讯"
+                android:textColor="@color/black_54"
+                android:textSize="14.0sp" />
+
+
+            <TextView
+                android:id="@+id/influence_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nick_name"
+                android:layout_marginTop="8.0dp"
+                android:layout_toRightOf="@+id/avatar"
+                android:text="被这5个学员访问过"
+                android:textColor="@color/black_54"
+                android:textSize="12.0sp" />
+
+            <LinearLayout
+                android:id="@+id/access_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/influence_tv"
+                android:layout_marginBottom="10.0dp"
+                android:layout_marginTop="8.0dp"
+                android:layout_toRightOf="@+id/avatar"
+                android:orientation="horizontal"
+                android:padding="5.0dp"
+                android:textColor="@color/black_54"
+                android:textSize="12.0sp">
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="2.0dp"
+                android:text="今天 11:00"
+                android:textColor="@color/black_54"
+                android:textSize="12.0sp" />
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

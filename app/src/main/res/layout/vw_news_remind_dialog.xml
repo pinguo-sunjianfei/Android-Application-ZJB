@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_rec_white_4dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8.0dp"
+        android:layout_marginRight="8.0dp"
+        android:layout_marginTop="30.0dp"
+        android:background="@drawable/news_remind_dialog_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/item_task"
+            android:textColor="#d03b3b"
+            android:textSize="14.0sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="8.0dp"
+            android:background="#ede7e3" />
+
+        <TextView
+            android:id="@+id/content_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="26.0dp"
+            android:gravity="left"
+            android:text="“你见过价值一万的驾照？”"
+            android:textColor="@color/black"
+            android:textSize="14.0sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/bottom_btn"
+        android:layout_width="match_parent"
+        android:layout_height="44.0dp"
+        android:layout_marginBottom="14.0dp"
+        android:layout_marginLeft="25.0dp"
+        android:layout_marginRight="25.0dp"
+        android:layout_marginTop="32.0dp"
+        android:background="@drawable/btn_inf_change"
+        android:gravity="center"
+        android:text="@string/view_news"
+        android:textColor="@color/inquiry_text_selector"
+        android:textSize="16.0sp" />
+
+</LinearLayout>

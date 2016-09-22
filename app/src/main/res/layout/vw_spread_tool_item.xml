@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="18.0dp"
+    android:paddingRight="18.0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2.0dp"
+        android:background="@drawable/home_shadow"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_main">
+
+            <com.idrv.coach.ui.view.DynamicHeightImageView
+                android:id="@+id/content_iv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FF3C2D0D"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:id="@+id/pay_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|top"
+                android:src="@drawable/has_exchange_right" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14.0dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10.0dp">
+
+            <ImageView
+                android:id="@+id/tool_type_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_spread_tool" />
+
+            <TextView
+                android:id="@+id/title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.0dp"
+                android:ellipsize="end"
+                android:maxWidth="200.0dp"
+                android:singleLine="true"
+                android:text="教练动感影集制作"
+                android:textColor="@color/black"
+                android:textSize="16.0sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12.0dp"
+            android:paddingLeft="10.0dp">
+
+            <TextView
+                android:id="@+id/price_integral"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="积分9"
+                android:textColor="@color/themes_main"
+                android:textSize="15.0sp" />
+
+            <TextView
+                android:id="@+id/price_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="2.0dp"
+                android:layout_toRightOf="@+id/price_integral"
+                android:text="(价格￥9)"
+                android:textColor="#4a4a4a"
+                android:textSize="15.0sp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="18.0dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/free_membership"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dp"
+        android:src="@drawable/free_membership"
+        android:visibility="gone" />
+
+</FrameLayout>

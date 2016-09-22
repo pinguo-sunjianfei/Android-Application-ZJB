@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.idrv.coach.ui.view.NicknameAndAvatarView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:layout_marginRight="15.0dp"
+        android:background="#cfcfcf" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/child_avatar"
+            android:layout_width="28.0dp"
+            android:layout_height="28.0dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/album_cover_default" />
+
+        <TextView
+            android:id="@+id/child_nick_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7.0dp"
+            android:ellipsize="end"
+            android:maxWidth="60.0dp"
+            android:singleLine="true"
+            android:text="赵教练"
+            android:textColor="#666666"
+            android:textSize="10.0sp" />
+    </LinearLayout>
+
+</com.idrv.coach.ui.view.NicknameAndAvatarView>

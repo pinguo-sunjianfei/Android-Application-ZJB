@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:background="@drawable/title_shadow">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/ins_history"
+            android:textColor="@color/text_color_white"
+            android:textSize="18.0sp" />
+
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left|center_vertical"
+            android:paddingLeft="15.0dp"
+            android:paddingRight="15.0dp"
+            android:src="@drawable/back" />
+
+    </FrameLayout>
+
+    <com.idrv.coach.ui.widget.SwipeRefreshLayout
+        android:id="@+id/refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6.0dp"
+            android:clipToPadding="false"
+            android:paddingLeft="10.0dp"
+            android:paddingRight="10.0dp"
+            android:paddingTop="16.0dp" />
+    </com.idrv.coach.ui.widget.SwipeRefreshLayout>
+</LinearLayout>

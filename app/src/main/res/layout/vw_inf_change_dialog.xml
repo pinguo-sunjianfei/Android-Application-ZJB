@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_rec_white_4dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="43.0dp"
+        android:layout_marginLeft="20.0dp"
+        android:layout_marginRight="20.0dp"
+        android:gravity="center"
+        android:text="@string/inf_change_title"
+        android:textColor="#686765"
+        android:textSize="13.0sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#ede7e3" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="64.0dp"
+        android:paddingTop="64.0dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/inf_change_dialog_bg"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/inf_increased"
+                android:textColor="#383736"
+                android:textSize="14.0sp" />
+
+            <TextView
+                android:id="@+id/content_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16.0dp"
+                android:gravity="center"
+                android:text="99"
+                android:textColor="#d03b3b"
+                android:textSize="40.0sp" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/bottom_btn"
+        android:layout_width="match_parent"
+        android:layout_height="44.0dp"
+        android:layout_marginBottom="15.0dp"
+        android:layout_marginLeft="25.0dp"
+        android:layout_marginRight="25.0dp"
+        android:background="@drawable/btn_inf_change"
+        android:gravity="center"
+        android:text="@string/inf_change_dialog_btn_text"
+        android:textColor="@color/inquiry_text_selector"
+        android:textSize="16.0sp" />
+
+</LinearLayout>

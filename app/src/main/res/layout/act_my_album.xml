@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="25.0dp"
+        android:paddingLeft="30.0dp"
+        android:paddingRight="30.0dp"
+        android:paddingTop="25.0dp">
+
+        <com.idrv.coach.ui.view.AlbumItemLayout
+            android:id="@+id/album_mine"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.0" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30.0dp" />
+
+        <com.idrv.coach.ui.view.AlbumItemLayout
+            android:id="@+id/album_student"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.0" />
+    </LinearLayout>
+</FrameLayout>

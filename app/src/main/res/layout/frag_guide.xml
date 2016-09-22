@@ -1,0 +1,22 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/guide_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY" />
+
+    <Button
+        android:id="@+id/guide_btn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/frame_corner3_dgreen"
+        android:minHeight="35dp"
+        android:text="@string/try_it_now"
+        android:visibility="gone" />
+
+</FrameLayout>

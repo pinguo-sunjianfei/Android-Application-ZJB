@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Android-Application-ZJB.iml" filepath="$PROJECT_DIR$/Android-Application-ZJB.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/extras/extras.iml" filepath="$PROJECT_DIR$/extras/extras.iml" />
+      <module fileurl="file://$PROJECT_DIR$/extras/zjb-image-loader/zjb-image-loader.iml" filepath="$PROJECT_DIR$/extras/zjb-image-loader/zjb-image-loader.iml" />
+      <module fileurl="file://$PROJECT_DIR$/extras/zjb-js-bridge/zjb-js-bridge.iml" filepath="$PROJECT_DIR$/extras/zjb-js-bridge/zjb-js-bridge.iml" />
+      <module fileurl="file://$PROJECT_DIR$/extras/zjb-mp3recorder/zjb-mp3recorder.iml" filepath="$PROJECT_DIR$/extras/zjb-mp3recorder/zjb-mp3recorder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/extras/zjb-sync-volley/zjb-sync-volley.iml" filepath="$PROJECT_DIR$/extras/zjb-sync-volley/zjb-sync-volley.iml" />
+    </modules>
+  </component>
+</project>

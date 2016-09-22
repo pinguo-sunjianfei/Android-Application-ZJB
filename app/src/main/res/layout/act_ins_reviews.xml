@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/share_to_student"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/ins_tips_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10.0dp"
+                android:lineSpacingExtra="5.0dp"
+                android:text="@string/ins_reviews_tips"
+                android:textColor="@color/black_54"
+                android:textSize="11.0sp" />
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="10.0dp"
+                android:scaleType="centerCrop" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/share_to_student"
+        android:layout_width="match_parent"
+        android:layout_height="45.0dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/themes_main"
+        android:gravity="center"
+        android:text="@string/share_ins_to_student"
+        android:textColor="@color/text_color_white"
+        android:textSize="15.0sp" />
+</RelativeLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/coach_rank_header_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dp"
+        android:src="@drawable/coach_rank_header_title" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-36.0dp"
+        android:orientation="horizontal">
+
+
+        <com.idrv.coach.ui.view.RankItemLayout
+            android:id="@+id/rank_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50.0dp"
+            app:item_background_drawable="@drawable/runner_up_bg"
+            app:item_number_background_color="#5aaa92"
+            app:item_number_margin_top="-20dp"
+            app:item_number_text_color="@color/text_color_white"
+            app:item_width_height="75.0dp" />
+
+        <com.idrv.coach.ui.view.RankItemLayout
+            android:id="@+id/rank_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20.0dp"
+            app:item_avatar_top_margin="8.0dp"
+            app:item_background_drawable="@drawable/champion_bg"
+            app:item_number_background_color="#ffd800"
+            app:item_number_margin_top="-18dp"
+            app:item_number_text_color="@color/black"
+            app:item_width_height="85.0dp" />
+
+        <com.idrv.coach.ui.view.RankItemLayout
+            android:id="@+id/rank_third"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20.0dp"
+            android:layout_marginTop="50.0dp"
+            app:item_background_drawable="@drawable/runner_up_bg"
+            app:item_number_background_color="#6961bc"
+            app:item_number_margin_top="-18dp"
+            app:item_number_text_color="@color/text_color_white"
+            app:item_width_height="75.0dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20.0dp"
+        android:orientation="horizontal">
+
+        <com.idrv.coach.ui.view.RankItemLayout
+            android:id="@+id/rank_forth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:item_chassis_drawable="@drawable/the_top_six_bottom_image"
+            app:item_number_background_color="#5d7cb4"
+            app:item_number_margin_top="-18dp"
+            app:item_number_text_color="@color/text_color_white"
+            app:item_show_chassis="true"
+            app:item_width_height="75.0dp" />
+
+        <com.idrv.coach.ui.view.RankItemLayout
+            android:id="@+id/rank_fifth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25.0dp"
+            app:item_chassis_drawable="@drawable/the_top_six_bottom_image"
+            app:item_number_background_color="#8f70ab"
+            app:item_number_margin_top="-18dp"
+            app:item_number_text_color="@color/text_color_white"
+            app:item_show_chassis="true"
+            app:item_width_height="75.0dp" />
+
+
+        <com.idrv.coach.ui.view.RankItemLayout
+            android:id="@+id/rank_sixth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25.0dp"
+            app:item_chassis_drawable="@drawable/the_top_six_bottom_image"
+            app:item_number_background_color="#a07555"
+            app:item_number_margin_top="-18dp"
+            app:item_number_text_color="@color/text_color_white"
+            app:item_show_chassis="true"
+            app:item_width_height="75.0dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rank_header_bottom_image" />
+</LinearLayout>

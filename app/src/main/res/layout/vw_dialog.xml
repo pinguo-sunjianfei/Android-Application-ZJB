@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_rec_white_2dp">
+
+    <!-- 标题-->
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dialog_title_margin_bottom"
+        android:layout_marginTop="@dimen/dialog_title_margin_top"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="@dimen/dialog_title_margin_left"
+        android:paddingRight="@dimen/dialog_title_margin_left"
+        android:singleLine="true"
+        android:text="@string/dialog_title"
+        android:textColor="@color/black_87"
+        android:textSize="@dimen/dialog_title_text_size" />
+    <!-- 对话框内容-->
+    <LinearLayout
+        android:id="@+id/dialog_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialog_title"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/dialog_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:paddingBottom="@dimen/dialog_edit_padding"
+            android:paddingLeft="@dimen/dialog_title_margin_left"
+            android:paddingRight="@dimen/dialog_title_margin_left"
+            android:text="@string/dialog_message"
+            android:textColor="@color/black_54"
+            android:textSize="@dimen/dialog_msg_text_size" />
+
+        <com.idrv.coach.ui.widget.ClearEditText
+            android:id="@+id/dialog_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dialog_content"
+            android:gravity="left|center_vertical"
+            android:hint="@string/dialog_edit_text_hint"
+            android:paddingBottom="@dimen/dialog_edit_padding"
+            android:paddingLeft="@dimen/dialog_title_margin_left"
+            android:paddingRight="@dimen/dialog_title_margin_left"
+            android:paddingTop="@dimen/dialog_edit_padding"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+
+    <RadioGroup
+        android:id="@+id/dialog_radio_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/dialog_content_layout"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:weightSum="1">
+
+
+        <RadioButton
+            android:id="@+id/dialog_female"
+            android:layout_width="20dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:background="@android:color/transparent"
+            android:button="@drawable/selector_dialog_checkbox"
+            android:checked="false"
+            android:gravity="center" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/dlg_sex_female"
+            android:textColor="@color/black_51"
+            android:textSize="13sp" />
+
+
+        <RadioButton
+            android:id="@+id/dialog_male"
+            android:layout_width="20dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/dialog_radio_margin"
+            android:background="@android:color/transparent"
+            android:button="@drawable/selector_dialog_checkbox"
+            android:checked="false"
+            android:gravity="center" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/dlg_sex_male"
+            android:textColor="@color/black_51"
+            android:textSize="13sp" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/dialog_progress_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialog_radio_layout"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dialog_edit_padding"
+        android:paddingTop="@dimen/dialog_edit_padding">
+
+        <com.idrv.coach.ui.widget.MaterialDesignProgressBar
+            android:id="@+id/dialog_progress"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            app:progress_stroke_color="@color/themes_main"
+            app:progress_stroke_width="2dp" />
+
+        <TextView
+            android:id="@+id/dialog_progress_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_dialog_left_btn_color_with_corner"
+            android:gravity="center"
+            android:text="@string/dialog_loading"
+            android:textColor="@color/black_54"
+            android:textSize="15sp" />
+    </LinearLayout>
+    <!-- Checkbox 相关-->
+    <CheckBox
+        android:id="@+id/dialog_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialog_progress_layout"
+        android:layout_marginBottom="26dp"
+        android:layout_marginLeft="@dimen/dialog_title_margin_left"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="11dp"
+        android:button="@drawable/selector_dialog_checkbox"
+        android:checked="true"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:text="@string/dialog_checkbox"
+        android:textColor="@color/black_54"
+        android:textSize="10sp" />
+
+    <!-- 底部的灰色横线 -->
+    <ImageView
+        android:id="@+id/dialog_split"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/dialog_checkbox"
+        android:background="#d9d9d9" />
+
+
+    <LinearLayout
+        android:id="@+id/dialog_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialog_split"
+        android:background="@drawable/dlg_corner"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <!-- 左侧 的按钮-->
+        <TextView
+            android:id="@+id/dialog_left"
+            style="@style/Dialog_Gray_Text" />
+        <!-- 中间的分割线-->
+        <ImageView
+            android:id="@+id/dialog_split_vertocal"
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8.5dp"
+            android:layout_marginTop="8.5dp"
+            android:layout_weight="0"
+            android:background="#cbcbcb" />
+        <!-- 右边 的按钮-->
+        <TextView
+            android:id="@+id/dialog_right"
+            style="@style/Dialog_Red_Text" />
+        <!-- 大按钮-->
+        <TextView
+            android:id="@+id/dialog_center_ok"
+            style="@style/Dialog_Blue_Text_Full"
+            android:visibility="visible" />
+    </LinearLayout>
+
+</RelativeLayout>

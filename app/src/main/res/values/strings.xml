@@ -1,0 +1,696 @@
+<resources>
+    <string name="app_name">助驾帮</string>
+    <string name="share_loading_picture">图片正在加载，请稍候...</string>
+    <string name="share_render_picture">正在准备图片，请稍候...</string>
+    <string name="sina_support_api">微博客户端不支持SDK分享或微博客户端未安装或微博客户端是非官方版本</string>
+    <string name="web_default_page_text">Webpage 默认文案</string>
+    <string name="share_error">分享出现异常，请重试</string>
+    <string name="weixin_not_install">没有安装微信客户端</string>
+    <string name="weixin_timeline_support">微信版本号过低，不支持朋友圈分享</string>
+    <string name="qq_support">你尚未安装QQ客户端，或者QQ版本过低</string>
+    <string name="share_finish">分享完成</string>
+    <string name="comment_no_name">匿名用户</string>
+    <string name="login">登录</string>
+    <string name="login_now">登录中...</string>
+    <string name="try_it_now">立即体验</string>
+    <string name="home_page">教练圈</string>
+    <string name="discover_page">发现</string>
+    <string name="mine_page">我的</string>
+    <string name="invite_code">邀请码</string>
+    <string name="invite_illustrate">初次使用需要填写邀请码</string>
+    <string name="input_invite_code">请输入邀请码</string>
+    <string name="filled_out">填好了</string>
+    <string name="input_correct_invite_code">请输入4位有效邀请码</string>
+    <string name="pls_wait">正在验证,请稍后...</string>
+    <string name="invalid_invite_code">邀请码验证失败,请重试</string>
+    <string name="today">今日</string>
+    <string name="yesterday_influence">昨日影响力</string>
+    <string name="details">提现</string>
+    <string name="influence">影响力</string>
+    <string name="today_task">今日资讯</string>
+    <string name="accept_increase_influence">分享出去,给自己打广告吧</string>
+    <string name="forwards">转发</string>
+    <string name="reviews">访问</string>
+    <string name="yesterday_commission">昨日收佣(元)</string>
+    <string name="my_commission">赚得佣金(元)</string>
+    <string name="countdown">倒计时</string>
+    <string name="accept">接受任务</string>
+    <string name="task_desc">任务描述</string>
+    <string name="share_str">分享</string>
+    <string name="title_drive_school">驾校</string>
+    <string name="task_update_time">助驾帮今日8:00更新资讯</string>
+    <string name="app_use_time">你陪伴助驾帮成长%1$s天啦,昨日影响了%2$s人</string>
+    <string name="network_error">网络不好,请重试</string>
+    <string name="download">下载</string>
+    <string name="download_progress">下载进度%s</string>
+    <string name="download_finish">下载完成</string>
+    <string name="main_version_update">版本升级</string>
+    <string name="down_load_now">正在下载最新版本</string>
+    <string name="inf_change_title">分享资讯,可以增加影响力,还能传播品牌</string>
+    <string name="inf_increased">影响力增加</string>
+    <string name="inf_change_dialog_btn_text">查看我影响了谁</string>
+    <string name="view_news">查看资讯</string>
+    <string name="views_adv">预览广告效果>></string>
+    <string name="views_adv_title">预览广告效果</string>
+    <string name="mark">“%s”</string>
+    <string name="view_right_now">立即查看</string>
+    <string name="coach_influence">你的广告指数</string>
+    <string name="access_you">准学员访问你</string>
+    <string name="advertise_for_me">为自己打广告</string>
+    <string name="advertising_now">立即打广告&#160;&#160;>></string>
+    <string name="num_day">%s天</string>
+    <string name="num_time">%s次</string>
+    <string name="num_access">%s位</string>
+    <string name="student">学员</string>
+    <string name="share_news_to_advertise">每日分享资讯，顺其自然为自己打广告</string>
+    <string name="views_your_adv">看过你的广告</string>
+    <string name="click_to_dynamic">去动态跟踪广告效果</string>
+    <string name="vis_num">%s人</string>
+    <string name="news_remind_tips">每日分享资讯，顺其自然为自己打广告</string>
+    <string name="inf_pop_content">你的广告被访问得越多，广告指数越大</string>
+    <string name="how_to_use">如何使用</string>
+    <string name="news_hall_title">今日资讯广告</string>
+    <string name="guide_text1">资讯广告每一天都会不一样</string>
+    <string name="guide_text2">为自己打广告,从分享资讯开始吧</string>
+    <string name="identity_verification_title">身份核实</string>
+    <string name="perfect_immediately">立即完善</string>
+    <string name="identity_verification_content"> 助驾帮业务仅对教练开放，请完善个人资料</string>
+    <string name="news_hall_help">1.&#160;资讯广告是助驾帮专为驾驶教练提供的为自己打广告的手段之一。\n\n2.&#160;将学员感兴趣的资讯与教练个人品牌相结合，由教练分享到学员群或朋友圈推荐学员阅读，以此起到传播自己，为自己打广告的作用。\n\n3.&#160;若能动员学员帮你转发，还能增加转介绍哦。</string>
+    <string name="token_expired">登录失效,请重新登录</string>
+    <string name="first_share">今日首次分享,积分+2</string>
+    <string name="receive_brand_text">成功领取教练名牌\n预览看看吧</string>
+
+    <!--分享-->
+    <string name="share">分享</string>
+    <string name="views_photo">查看照片</string>
+
+    <!--发现-->
+    <string name="item_views_dynamic">查看动态</string>
+    <string name="item_business">业务厅</string>
+    <string name="item_task">今日资讯</string>
+    <string name="item_welfare">福利</string>
+    <string name="item_enrollment_site">招生网站</string>
+    <string name="item_spread_tools">积分商城</string>
+    <string name="new_business">有新的业务</string>
+    <string name="new_welfare">有新的福利</string>
+    <string name="enrollment_site_share_title">最个性的教练空间来了</string>
+    <string name="enrollment_site_share_content">助驾帮倾力打造最个性的教练空间，现在接受预约申请啦</string>
+    <string name="spread_tools_share_title">我是教练%s</string>
+    <string name="spread_tools_share_content">来自%s教练的录音,听还是不听？</string>
+    <string name="new_dynamic">有新动态</string>
+    <string name="view_today_news">为自己打广告</string>
+    <string name="earn_pocket_money">增收新手段,赚点零花钱</string>
+    <string name="extension_services">推广服务</string>
+    <string name="plan_setting">宣传方案</string>
+
+    <!--个人主页-->
+    <string name="teach_age">教龄</string>
+    <string name="personal_info">更新我的资料</string>
+    <string name="always_exam">常驻考场</string>
+    <string name="exercise_address">常练车地址</string>
+    <string name="share_to_other">分享助驾帮</string>
+    <string name="advisory">客服</string>
+    <string name="my_team">我的团队</string>
+    <string name="my_fans">谁最关注我</string>
+    <string name="perfection_profile">您还有资料未填写,将会影响您的传播效益哦</string>
+    <string name="person_center">个人中心</string>
+    <string name="profile_share_title">有想法的教练都在这里</string>
+    <string name="profile_share_subject">“助驾帮”教练火热招募中……精彩活动,优质业务等你来完成!有想法的教练都在这里!</string>
+    <string name="who_care_me">谁最关注我</string>
+    <string name="my_wallet">钱包</string>
+    <string name="my_album">我的相册</string>
+
+    <!--提现-->
+    <string name="pls_input_sum">请输入提现金额</string>
+    <string name="pls_input_info">请输入提现信息</string>
+    <string name="sum_text_hint">提现金额只支持100的倍数</string>
+    <string name="bank">银行</string>
+    <string name="bank_num">银行卡号</string>
+    <string name="pls_input_bank_name">请输入银行名称</string>
+    <string name="pls_input_bank_num">请输入银行卡号</string>
+    <string name="next_step">下一步</string>
+    <string name="apply">您正在申请提现至</string>
+    <string name="card_num">卡号</string>
+    <string name="money_sum">金额</string>
+    <string name="pls_input_card_owner_info">请输入持卡本人的信息</string>
+    <string name="name">姓名</string>
+    <string name="id_card">身份证号</string>
+    <string name="tel_num">手机号</string>
+    <string name="pls_input_name">请输入姓名</string>
+    <string name="pls_input_card_id">请输入身份证号</string>
+    <string name="pls_input_tel_num">请输入手机号</string>
+    <string name="pls_input_valid_num">请输入有效的提现金额</string>
+    <string name="pls_input_valid_num_while">您的余额不足,请重新输入提现金额</string>
+    <string name="pls_input_valid_bank_name">请输入银行名称</string>
+    <string name="pls_input_valid_bank_id">请输入有效的银行卡账号</string>
+    <string name="pls_input_valid_card_id">请输入有效的身份证号</string>
+    <string name="pls_input_valid_tel_num">请输入有效的手机号码</string>
+    <string name="tip">提示</string>
+    <string name="tips">温馨提示</string>
+    <string name="commit_success">你的提现申请已提交成功,预计到账时间为%s,请注意查收</string>
+    <string name="confirm">确认</string>
+    <string name="close">关闭</string>
+    <string name="balance">余额%s元</string>
+    <string name="helper">帮助</string>
+    <string name="i_know_it">我知道啦</string>
+    <string name="with_draw_help">1.仅支持100的倍数的金额提现\n2.每月5日、15日、25日为财务结算日，您发起提现申请后，我们会在财务结算当日，汇款至您的银行账户，请注意查收\n
+3.如需紧急处理或遇到问题，请到个人中心联系客服，或致电工作人员：028-64897280</string>
+
+    <!--业务大厅-->
+    <string name="today_news">今日资讯</string>
+    <string name="new_hall">资讯厅</string>
+    <string name="business_has_been_accepted">今日已受理业务</string>
+    <string name="times">次</string>
+
+    <!--车险-->
+    <string name="inquiry_to_buy">先询价再购买</string>
+    <string name="quick_quote">已询价的车险业务</string>
+    <string name="has_inquiry">办理车险业务</string>
+    <string name="car_insurance">车险</string>
+    <string name="ins_list_title">已询价</string>
+    <string name="insurance_inquiry">车险询价</string>
+    <string name="inquiry_now">立即询价</string>
+    <string name="new_car_for_insurance">新车购保</string>
+    <string name="app_ins_title">办理车险</string>
+    <string name="apply_insurance">续保</string>
+    <string name="ways_to_purchase">购保方式</string>
+    <string name="upload_material">上传材料</string>
+    <string name="insurance_tips">新车购保,需要提供身份证正、反面，车辆合格证，购车发票，才能进行车险询价</string>
+    <string name="item_owner_name">车主姓名</string>
+    <string name="pls_input_owner_name">请输入车主姓名</string>
+    <string name="item_tel">联系电话</string>
+    <string name="pls_input_tel">请输入联系电话</string>
+    <string name="item_owner_card">身份证号</string>
+    <string name="item_positive_identification">身份证正面</string>
+    <string name="item_negative_identification">身份证反面</string>
+    <string name="item_driving_license_first_page">行驶证第一页</string>
+    <string name="item_driving_license_second_page">行驶证第二页</string>
+    <string name="item_driving_license_positive_page">行驶证正面照片</string>
+    <string name="select_from_gallery">从手机相册中选择</string>
+    <string name="old_car_insurance_tips">车险续保,需要提供身份证正、反面，行驶证第一页、第二页，才能进行车险续保</string>
+    <string name="name_not_be_null">车主姓名不能为空</string>
+    <string name="pls_select_upload_file">请选择要上传的证件</string>
+    <string name="commit_now">正在提交信息,请稍后...</string>
+    <string name="car_certificate">车辆合格证</string>
+    <string name="car_invoice">购车发票</string>
+    <string name="error">错误</string>
+    <string name="post_info_error">提交信息失败,点击确定重新上传</string>
+    <string name="upload_pic_error">上传图片失败,点击确定重新上传</string>
+    <string name="inquiry_success">询价成功</string>
+    <string name="inquiry_tips">助驾帮已收到你的询价申请,我们会在24小时内处理你的业务,请耐心等待。</string>
+    <string name="improve_personal_information">验证手机号才能办理车险业务哦，也方便我们将车险业务进展情况及时反馈给你。</string>
+    <string name="improve_personal_information_now">立即验证</string>
+    <string name="inquiry_list_tips">以下是询价后的业务,可直接购买车险</string>
+    <string name="price">价格</string>
+    <string name="insurance_company">保险公司</string>
+    <string name="insurance_reviews">预览报价单</string>
+    <string name="pay">缴费</string>
+    <string name="expired">已失效</string>
+    <string name="ins_default_tips">&#160;1.若你的学员或朋友有购买车险的需求，可通过办理车险业务提交给我们\n
+        2.我们会在你提交车险需求后的24小时内受理你的业务\n
+        3.你提交过的车险需求，可到已询价的车险业务里查看\n
+        4.如遇问题，请致电028-64897280反馈，或到个人中心联系客服</string>
+    <string name="no_ins">你还没有办理过该业务</string>
+    <string name="car_owner_tel">车主电话</string>
+    <string name="ins_reviews_tips">1.以下保费是根据你提供的资料所做的测算，投保险种以及对应保费见如下报价单。最终投保险种及保费以保险单为准。\n
+2.支付完成后，我们会在24小时内完成出单。\n
+3.请详细核对报价单，如需修改或有问题请及时与我们联系:028-64897280。</string>
+    <string name="share_quote_to_student">分享报价单给学员</string>
+    <string name="ins_reviews_title">预览详细保单</string>
+
+    <!--个人资料-->
+    <string name="title_user_info">个人资料</string>
+    <string name="item_user_photo">头像</string>
+    <string name="item_user_nickname">昵称</string>
+    <string name="item_user_teachAge">教龄</string>
+    <string name="item_user_coachCard">教练证</string>
+    <string name="item_user_record">教学宣言</string>
+    <string name="unUpload">未上传</string>
+    <string name="unRecord">未录音</string>
+    <string name="unComplete">未完善</string>
+    <string name="complete">已完善</string>
+    <string name="unBind">未绑定</string>
+    <string name="unFilled">未填写</string>
+    <string name="unSetting">未设置</string>
+    <string name="camera">拍照</string>
+    <string name="album">相册</string>
+    <string name="sure">确定</string>
+    <string name="cancel">取消</string>
+    <string name="hint_train_site">请输入常练车地址</string>
+    <string name="hint_test_site">请输入常去考场</string>
+    <string name="hint_nickname">请输入昵称</string>
+    <string name="hint_phone">请输入11位手机号</string>
+    <string name="logout">退出登录</string>
+    <string name="is_sure_exit_zjb">确认退出助驾帮吗？</string>
+    <string name="http_error">请求失败</string>
+    <!--联系方式-->
+    <string name="title_contact_way">联系方式</string>
+    <string name="item_contact_contact">手机号</string>
+    <string name="item_contact_qrCode">微信二维码</string>
+    <string name="item_contact_notice">完善个人资料，方便学员快速找到你</string>
+    <!--地址-->
+    <string name="save">保存</string>
+    <string name="title_address">教学信息</string>
+    <string name="item_address_driveSchool">驾校</string>
+    <string name="item_address_testSite">考场地址</string>
+    <string name="item_address_trainSite">常练车地址</string>
+    <string name="nickname_not_null">昵称不能为空</string>
+    <string name="train_not_null">练车地址不能为空</string>
+    <string name="test_not_null">考场不能为空</string>
+    <!--驾校-->
+    <string name="pls_input_drive_school">请输入驾校</string>
+    <string name="location_city">定位城市</string>
+    <string name="location_now">城市定位中...</string>
+    <string name="other_tips">四川省外的教练,请选择\"其他\"并输入驾校名</string>
+    <string name="other">其他</string>
+    <string name="city_tips">四川其他城市</string>
+    <string name="location_failed">定位失败</string>
+    <string name="no_location_permission">定位服务未开启</string>
+    <string name="no_location_permission_tips">定位服务未开启 请在系统设置中开启助驾帮的定位服务</string>
+    <string name="pls_input_school_name">请输入驾校名查询</string>
+    <string name="select_school_tips">如无你所在的驾校,请选择\"其他\"并输入驾校名</string>
+    <string name="select_city">选择城市</string>
+    <string name="select_school">选择驾校</string>
+    <string name="input_school">输入驾校</string>
+    <string name="input_school_text_hint">驾校填写格式:城市+驾校名</string>
+    <string name="school_name_not_be_null">驾校名称不能为空</string>
+
+    <!--教练证-->
+    <string name="title_coach_card">上传教练证</string>
+    <string name="coach_card_notice">请上传你的教练证正面照，保证照片上的文字清晰可见</string>
+    <string name="change_coach_card">更换教练证</string>
+    <string name="pls_choose_upload_way">请选择上传方式</string>
+
+    <!--二维码-->
+    <string name="title_qrcode">上传二维码</string>
+    <string name="qrcode_notice_title">如何获得您的微信二维码？</string>
+    <string name="qrcode_notice_content1">打开你的微信：点击“我”——点击头像——打开“我的二维码”</string>
+    <string name="qrcode_notice_content2">——点击右上角的操作——选择“保存图片”即可</string>
+    <string name="qrcode_notice_content3">（截屏无效）</string>
+    <string name="help">帮助</string>
+    <string name="change_qrcode">更换二维码</string>
+    <string name="wx_qrcode">微信二维码</string>
+    <string name="qrcode_help_title_1">为什么要上传微信二维码？</string>
+    <string name="qrcode_help_content_1">上传微信二维码后，潜在学员可通过你分享的内容，快速找到你，并加你为好友。</string>
+    <string name="upload_error_repick_pic">"上传失败，请选择图片重新上传"</string>
+
+    <!--我的团队-->
+    <string name="title_myteam">我的团队</string>
+    <string name="myteam_item_teamname">团队名称</string>
+    <string name="myteam_team_number">团队成员</string>
+    <string name="myteam_noTeam">你还未加入一个团队</string>
+    <string name="myteam_noInviter">你目前还没有团队教练，暂不支持创建团队</string>
+    <string name="myteam_noTeam_notice">请联系签约教练邀请你加入团队，如有疑问请到个人中心联系客服</string>
+    <string name="myteam_create_team">点击创建团队</string>
+    <string name="myteam_create_team_notice">众人拾柴火焰高，把你的教练聚集起来吧</string>
+    <string name="new_function">新功能</string>
+    <string name="new_function_introduce">\u3000\u3000团队管理是助驾帮产品团队专门为平台签约教练打造的功能，帮助签约教练管理自己好的教练团队。</string>
+    <string name="Iknowit">我知道了</string>
+    <string name="person">人</string>
+    <string name="have_invited">已邀请</string>
+    <string name="add_mumber">添加成员</string>
+    <string name="ok">好的</string>
+    <string name="dlg_noinviter">你暂没有可邀请的教练了，快邀请你认识的教练注册助驾帮吧</string>
+    <!--创建团队-->
+    <string name="title_create_team">创建团队</string>
+    <string name="create_team_introduce">邀请使用同一邀请码的成员加入</string>
+    <string name="create_team_over">完成创建</string>
+    <string name="create_success">创建成功</string>
+    <!--修改团队名称-->
+    <string name="title_team_name">团队名称</string>
+    <string name="team_name_hint">为你的团队取一个响亮的名号吧</string>
+    <string name="team_name_not_be_null">团队名不能为空</string>
+    <string name="revise_success">修改成功</string>
+    <!--邀请团队成员-->
+    <string name="title_invite_mumber">邀请成员</string>
+    <string name="invite">邀请</string>
+    <string name="invite_success">邀请成功</string>
+    <string name="pls_invite_someone">"请选择成员"</string>
+    <string name="wait_join">等待加入</string>
+    <!--修改头像-->
+    <string name="camera_upload">拍照上传</string>
+    <string name="choose_album_upload">选择照片上传</string>
+    <string name="upload_success">上传成功</string>
+    <!--绑定手机号-->
+    <string name="title_phone">手机号</string>
+    <string name="title_bind_phone">绑定手机</string>
+    <string name="do_bind">完成绑定</string>
+    <string name="hint_verify_code">请输入验证码</string>
+    <string name="verify_code">验证码</string>
+    <string name="verify_code_send_success">验证码发送成功</string>
+    <string name="verify_code_again">重新获取</string>
+    <string name="pls_input_right_phone">手机号格式错误，请输入正确手机号</string>
+    <string name="pls_input_right_varifycode">请输入正确的验证码</string>
+    <string name="bind_success">绑定成功</string>
+    <string name="skip">跳过</string>
+    <string name="into_zjb">进入助驾帮</string>
+    <string name="verify_code_has_send">验证码已发送,请稍后查收</string>
+    <string name="invite_code_tips">初次使用建议填写邀请码(选填)</string>
+    <!--录音-->
+    <string name="title_record">教学宣言</string>
+    <string name="leave">离开</string>
+    <string name="is_exit_unsave_record">不保存录音就离开吗？</string>
+    <string name="press_long_record">长按录音</string>
+    <string name="press_long_record_again">长按重录</string>
+    <string name="loosen_over">松开结束</string>
+    <string name="upload">上传</string>
+    <string name="record_notice">录制教学宣言，可增加学员信任感，它还是一份个性化的有声名片哦</string>
+    <string name="record_notice2">重录会自动覆盖上一条录音哦</string>
+    <string name="record_too_short">最少录制时间为10s，再录一会儿吧</string>
+    <string name="pls_open_the_permission">请开启权限</string>
+    <string name="upload_error">上传失败</string>
+
+    <!--动态-->
+    <string name="dynamic_header_tips">这些教练赞过我</string>
+    <string name="default_student_name">学员</string>
+    <string name="dynamic_title">教练圈</string>
+    <string name="coach_rank_title">教练人气榜</string>
+    <string name="like">赞</string>
+    <string name="join_team">加入了“%s”团队</string>
+    <string name="shared_news">分享的资讯</string>
+    <string name="day_influence">24小时影响力 +%s</string>
+    <string name="task_name">《%s》</string>
+    <string name="type_like">为我点了灯</string>
+    <string name="type_share_like">分享的资讯被%s点灯</string>
+    <string name="type_forwarding">传播了我分享的资讯</string>
+    <string name="type_share_forwarding">分享的资讯被%s传播</string>
+    <string name="access_tips">这些学员访问过你</string>
+    <string name="invite_notify">邀请通知</string>
+    <string name="invite_content">%1$s邀请你加入“%2$s”团队,一起加油</string>
+    <string name="not_join">暂不加入</string>
+    <string name="coach">%s教练</string>
+    <string name="join">加入团队</string>
+    <string name="upload_qr_code">上传微信二维码,让新学员快速联系到你</string>
+    <string name="no_dynamic_message">暂无动态,快去分享资讯为自己打广告吧</string>
+    <string name="share_news">去分享资讯</string>
+    <string name="join_now">正在加入团队,请稍后...</string>
+    <string name="someone_read_my_shared_news">访问了我</string>
+    <string name="comment_me_at_my_website">评论了我</string>
+    <string name="ask_me_at_my_website">咨询了我</string>
+    <string name="praise_sum">&#160;&#160;等%s人赞</string>
+
+    <!--dialog-->
+    <string name="dialog_revising">修改中</string>
+    <string name="dialog_uploading">上传中</string>
+    <string name="dialog_creating">创建中</string>
+    <string name="dialog_inviting">邀请中</string>
+    <string name="dialog_verify_code">获取验证码</string>
+    <string name="dialog_bingding">绑定中</string>
+    <!--驾考防爆险-->
+    <string name="ins_des_title">投保说明:</string>
+    <string name="ins_des">1.仅限报考C照且未报考过科目二的学员\n2.申报人信息关系到资料审核以及保单传递，请务必填写真实信息\n3.驾考防爆险保费100元/人/份\n4.出单时间为周一至周五(如学员下周一参加考试,请务必在周五之前提交办理信息)</string>
+    <string name="apply_test_ins">申请投保驾考防爆险</string>
+    <string name="query_already_submitted">查询已提交的申请</string>
+    <string name="pls_input_insured_info">请输入投保人(学员)信息</string>
+    <string name="drive_ins_tips">出单时间为周一至周五(如学员下周一参加考试,请务必在周五之前提交办理信息)</string>
+    <string name="upload_photo">上传照片</string>
+    <string name="pls_input_insured_name">请输入投保人(学员)姓名</string>
+    <string name="pls_input_insured_tel">请输入投保人(学员)手机号</string>
+    <string name="pls_input_insured_card_id">请输入投保人(学员)身份证号</string>
+    <string name="pls_improve_personal_information">验证手机号才能办理驾考防爆险业务哦，也方便我们将车险业务进展情况及时反馈给你。</string>
+    <string name="insured_name_not_be_null">投保人姓名不能为空</string>
+    <string name="reviews_tips">你正在为&#160;%s&#160;申请驾考防爆险投保</string>
+    <string name="ins_num">助驾帮驾考防爆险&#160;x&#160;1</string>
+    <string name="apply_time">申请时间:&#160;&#160;%s</string>
+    <string name="ins_price">100元</string>
+    <string name="insured_name">投保人姓名</string>
+    <string name="insured_id_card">投保人身份证号</string>
+    <string name="insured_tel">投保人电话</string>
+    <string name="ins_now">立即投保</string>
+    <string name="select_apply">选择支付方式</string>
+    <string name="apply_tips">支付完成之后24小时之内即可出单</string>
+    <string name="already_apply">已申请</string>
+    <string name="face_payment">面对面支付</string>
+    <string name="pay_for_qr_code">学员使用微信扫描二维码完成支付</string>
+    <string name="pay_share">分享支付链接给学员</string>
+    <string name="pay_for_share">学员不在旁边,将支付链接发给学员完成支付</string>
+    <string name="driving_test_ins">驾考防爆险</string>
+    <string name="ins_details">保险详情</string>
+    <string name="reviews_ins">查看保单</string>
+    <string name="failure_causes">失败原因:&#160;</string>
+    <string name="apply_success">申请成功</string>
+    <string name="apply_success_content">你已成功申请驾考防爆险，支付完成后，我们会尽快为你安排出单</string>
+    <string name="no_driving_test_ins">你还没有防爆险业务</string>
+    <string name="car_test_ins_details">驾考防爆险详情</string>
+    <string name="d_ins_share_title">驾考防爆险考爆赔5000</string>
+    <string name="d_ins_share_content">考神加持都不及这个来得实在</string>
+    <string name="pay_tips">注意:如支付遇到问题,请到个人中心联系客服,或致电\n028&#8211;64897280</string>
+    <string name="wx_pay">微信安全支付</string>
+    <string name="pay_action">支付</string>
+    <string name="total_price">总计:%s元</string>
+    <string name="to_pay">去支付</string>
+    <string name="share_ins_to_student">分享保单给学员</string>
+    <string name="ins_detail">说明</string>
+    <string name="new_drive_ins_share_content">教你玩转驾考防爆险:转介绍说来就来</string>
+    <string name="drive_ins_course_title">教你玩转驾考防爆险</string>
+    <string name="new_drive_ins_share_title">如何增加转介绍?有法子</string>
+    <string name="ins_history">历史保单</string>
+    <string name="ins_desc">保险说明</string>
+
+
+    <!--权限申请-->
+    <string name="permission_apply">权限申请</string>
+    <string name="record_permission_tips">助驾帮需要获取你的录音权限，否则将无法为你开启录音服务</string>
+    <string name="open_record_permission">录音权限未开启,请在系统设置中开启录音权限</string>
+    <string name="open_camera_permission">相机权限未开启，请在系统设置中开启相机权限</string>
+    <string name="open_sdcard_permission">文件读取权限未开启，请在系统设置中开启文件读取权限</string>
+    <string name="agree">同意</string>
+    <string name="reject">拒绝</string>
+
+    <!--相册-->
+    <string name="gallery_name">图库</string>
+    <string name="gallery_go_ahead">继 续</string>
+
+    <!--设置我的服务-->
+    <string name="provide_services">我提供的服务</string>
+    <string name="add_services">请从下方添加你已提供的服务</string>
+    <string name="services_can_be_add">可添加的服务</string>
+    <string name="set_my_service">设置我的服务</string>
+    <string name="service_edit">编辑</string>
+    <string name="complete_profile">资料完善</string>
+    <string name="reviews_my_website">预览我的空间</string>
+    <string name="share_to_my_student">分享给我的学员</string>
+    <string name="message">消息</string>
+    <string name="item_profile">个人资料</string>
+    <string name="my_services">我的服务</string>
+    <string name="student_photo">学员风采</string>
+    <string name="my_photo">个人风采</string>
+    <string name="had_shared">已分享</string>
+    <string name="not_share">未分享</string>
+    <string name="website_data">网站数据</string>
+    <string name="ask_today">今日被访问</string>
+    <string name="forwards_today">今日被转发</string>
+    <string name="accumulated_be_accessed">累计被访问</string>
+    <string name="accumulated_be_forwarded">累计被转发</string>
+    <string name="options">%d项</string>
+    <string name="piece">%d张</string>
+    <string name="save_success">保存成功</string>
+    <string name="save_failed">保存失败,请重新保存</string>
+    <string name="website_share_title">这是%s的教练空间</string>
+    <string name="website_share_content">靠谱好教练！学车的快来，欢迎咨询</string>
+    <string name="website_share_student_title">%s邀请你访问Ta的教练空间</string>
+    <string name="website_share_student_content">来重新认识一下你的教练吧</string>
+    <string name="website_share_toast">必须5项资料都完善后，才能分享个人网站哦</string>
+    <string name="create_web_site_tips">正在生成教练空间,请稍后</string>
+    <string name="create_web_site_failed">真遗憾,网站生成失败</string>
+    <string name="profile_not_done">个人资料&#160;:&#160;不完善</string>
+    <string name="photo_not_upload">照片&#160;:&#160;还没上传</string>
+    <string name="upload_qr_code_tips">上传微信二维码，学员可直接加你好友</string>
+    <string name="upload_photo_tips">上传照片至网站，可加深学员对你的了解</string>
+    <string name="complete_profile_info">去完善个人资料</string>
+    <string name="to_upload">去上传照片</string>
+
+    <!--教学风采-照片墙-->
+    <string name="click_to_upload_photo">点击上传你的教学照片吧</string>
+    <string name="the_large_num_is_four">一次只可选择4张</string>
+    <string name="upload_photo_now">正在上传图片,请稍后...</string>
+    <string name="sure_delete_photo">确认删除此照片吗?</string>
+    <string name="upload_tips">你还可以上传16张照片哦</string>
+    <string name="num_photo">%s张照片</string>
+    <string name="open_gallery">打开手机相册</string>
+    <string name="upload_photo_student">你正在上传照片至学员风采</string>
+    <string name="upload_photo_student_tips">上传学员的持证代言/与学员的合影照片效果更好哦</string>
+    <string name="upload_photo_mine">你正在上传照片至个人风采</string>
+    <string name="upload_photo_mine_tips">上传你和蔼、帅帅的照片或教练车、场地照都可以，注意照片质量哦</string>
+
+    <!--我的钱包-->
+    <string name="commission_balance">佣金余额</string>
+    <string name="new_car_ins">新车购保业务</string>
+    <string name="old_car_ins">车险续保业务</string>
+    <string name="driving_ins">驾考防爆险业务</string>
+    <string name="welfare">福利</string>
+    <string name="withdraw">提现</string>
+    <string name="buy_spread_tool">传播工具购买</string>
+    <string name="buy_poster">海报购买</string>
+    <string name="commission_detail_5">签约教练佣金提成</string>
+    <string name="commission_detail_7">购车提成</string>
+    <string name="commission_detail_9">陪练佣金</string>
+    <string name="current_credit">当前积分</string>
+    <string name="redeem">积分兑换</string>
+    <string name="redeem_newest_spread_tool">查看积分商城</string>
+    <string name="item_wallet">佣金,积分</string>
+
+    <!--我的网站-->
+    <string name="my_website">我的空间</string>
+    <string name="his_space">Ta的空间</string>
+    <string name="preview_website">预览效果</string>
+    <string name="share_to_student">分享给学员</string>
+    <string name="photo_tab">照片</string>
+    <string name="comment_tab">评论与咨询</string>
+    <string name="website_setting_tips">你的空间也可通过每日资讯分享出去哦</string>
+    <string name="setting_now">立即设置</string>
+    <string name="conditions_of_use">说明:</string>
+    <string name="option_1">助驾帮赠送给教练的默认传播方案</string>
+    <string name="option_2">需录制教学宣言才能使用</string>
+    <string name="option_3">1.仅已生成教练空间的教练可使用\n2.教练空间照片数不少于6张</string>
+    <string name="immediately_use">立即使用</string>
+    <string name="setting_now_pls_wait">正在设置,请稍后...</string>
+    <string name="propagation_enable_tips">你的传播方案已生效，快去分享试试效果吧</string>
+    <string name="pro_share_tips">点此去分享,试试传播效果</string>
+    <string name="setting_error_tips">设置失败,请稍后再试</string>
+    <string name="create_website_tips">你还没有生成你的专属教练空间哦</string>
+    <string name="create_website_record">录制教学宣言后才能使用此方案哦</string>
+    <string name="pro_create_now">立即去生成</string>
+    <string name="record_now">录制教学宣言</string>
+    <string name="pro_upload_tips">为了更好的传播方案效果，最少要上传6张照片才能使用此方案哦</string>
+    <string name="pro_upload_now">去上传照片</string>
+    <string name="create_website_fail">空间生成失败,请稍后重试</string>
+    <string name="receive_now">立即领取</string>
+    <string name="website_perfection_profile">请完善以下2项资料</string>
+    <string name="to_set">去设置</string>
+    <string name="call_now">拨打%s?</string>
+    <string name="call">拨打</string>
+    <string name="create_website_subject">提示:连续3天分享资讯，即可生成专属教练空间</string>
+    <string name="share_three_days_in_a_row">连续3天分享资讯才能生成教练专属空间\n记得分享资讯哦</string>
+    <string name="create_website_success_title">恭喜,已成功为你生成教练空间</string>
+    <string name="excellent_website">先看看其他教练的空间吧</string>
+    <string name="same_school">ta跟你是同一个驾校</string>
+    <string name="ask_his_website">访问ta的空间</string>
+    <string name="teach_age_s">%s教龄</string>
+    <string name="next_coach">下一位教练</string>
+    <string name="into_my_website">进入我的空间</string>
+    <string name="title_recommend_website">推荐教练空间</string>
+    <string name="create_website_success">生成成功</string>
+    <string name="no_more">你已经看到最后一位推荐教练了哦</string>
+    <string name="receive_success_title">领取成功</string>
+    <string name="receive_success_subject">你已成功领取传播方案,你可以打开【今日资讯】页分享出去,试试传播效果哦</string>
+    <string name="pro_setting_error">你正在使用此方案哦</string>
+    <string name="weekly_share_content">实时关注每周传播效果,更好地传播教练品牌</string>
+    <string name="weekly_share_title">我的传播周报已生成</string>
+    <string name="how_to_apply">如何办理&#160;>></string>
+    <string name="guest_share_title">优秀教练空间——来自%s</string>
+    <string name="guest_share_content">靠谱好教练，学车的快来咨询</string>
+
+    <!--教练排行榜-->
+    <string name="rank_teach_age">教龄%s年</string>
+    <string name="rank_title">教练人气榜</string>
+    <string name="coach_default_name">教练</string>
+
+    <!--传播工具-->
+    <string name="preview">预览</string>
+    <string name="count_down_days">还剩%s天</string>
+    <string name="vw_exchange_title">请确认使用传播工具</string>
+    <string name="confirm_to_use_poster">请确认使用海报</string>
+    <string name="get_order_info_now">正在获取订单信息,请稍后...</string>
+    <string name="buy_now_pls_waite">正在购买,请稍后...</string>
+    <string name="get_order_info_failed">获取订单信息失败,请重试</string>
+    <string name="pay_failed">购买失败</string>
+    <string name="pay_success">购买成功</string>
+    <string name="pay_cancel">取消购买</string>
+    <string name="exchange_success">兑换成功</string>
+    <string name="exchange_failed">兑换失败</string>
+    <string name="has_free">已为你免费</string>
+    <string name="not_enough_credit">积分不足,每日分享资讯可增加积分哦</string>
+    <string name="preview_spread_tool_title">预览%s</string>
+    <string name="pay_plan_1">使用积分兑换(%s积分)</string>
+    <string name="pay_plan_2">使用佣金支付(￥%s)</string>
+    <string name="pay_plan_3">使用微信支付(￥%s)</string>
+    <string name="spread_tool">传播工具</string>
+    <string name="price_integral">积分%s</string>
+    <string name="price_rmb">(价格￥%s)</string>
+    <string name="points_mall">积分商城</string>
+    <string name="set_text">设置文字</string>
+    <string name="the_largest_text_length">%s字</string>
+    <string name="re_make">重新制作</string>
+    <string name="use_website_qr_image">使用教练空间二维码</string>
+    <string name="points_free">会员免费</string>
+    <string name="how_to_be_member">你还不是会员,如想成为会员,请到个人中心联系客服</string>
+    <string name="make_now">开始制作</string>
+    <string name="make_complete">完成</string>
+    <string name="poster_exit_tips">你制作的海报还没完成,确认要离开吗？</string>
+    <string name="make_next_time">下次再做</string>
+    <string name="input_not_be_null">你还没有输入文字哦</string>
+    <string name="pic_has_save_in_sys_album">图片已保存至手机相册</string>
+    <string name="pro_setting_1">基本方案</string>
+    <string name="pro_setting_2">名牌+教学宣言</string>
+    <string name="pro_setting_3">名牌+教练空间</string>
+
+    <!--新版首页-->
+    <string name="brackets">(%s)</string>
+    <string name="prepares_students_access">准学员访问你</string>
+    <string name="for_their_own_propaganda">为自己宣传</string>
+    <string name="use_app_time">已使用助驾帮</string>
+    <string name="no_more_message">没有更多消息</string>
+    <string name="guide_text_title_1">欢迎来到助驾帮,点击下面的标题试试</string>
+    <string name="guide_text_title_2">&lt;助驾帮 能为教练做什么&gt;</string>
+    <string name="guide_text_title_3">下面是助驾帮的使用说明</string>
+    <string name="guide_text_title_4">&lt;助驾帮 应该怎么用&gt;</string>
+    <string name="days">天</string>
+
+    <!--新版个人中心-->
+    <string name="teach_pic">教学照片</string>
+    <string name="comment_and_access">评论与咨询</string>
+    <string name="settings">设置</string>
+    <string name="unit_photo">%s张</string>
+    <string name="unit_comment">%s条</string>
+
+    <!--设置-->
+    <string name="clear_cache">清除本地缓存</string>
+    <string name="use_manual">使用帮助</string>
+    <string name="contact_customer">联系客服</string>
+    <string name="about_us">关于助驾帮</string>
+    <string name="clear_ing">正在清理缓存...</string>
+    <string name="clear_cache_success">已清除缓存</string>
+    <string name="clear_cache_error">缓存清理失败，请稍候重试</string>
+
+    <!--评论-->
+    <string name="delete">删除</string>
+    <string name="contact_by_phone">电话联系</string>
+    <string name="contact_by_message">短信联系</string>
+    <string name="send_message_tips">确认短信联系学员%s吗?</string>
+    <string name="comment_title">评论与咨询</string>
+    <string name="comment">评论</string>
+    <string name="access">咨询</string>
+    <string name="delete_comment_now">正在删除评论</string>
+    <string name="delete_access_now">正在删除咨询</string>
+    <string name="delete_comment_success">删除成功</string>
+    <string name="delete_comment_failed">删除失败</string>
+    <string name="confirm_delete_comment">确认要删除此%s吗?</string>
+    <string name="invite_student_to_comment">邀请学员评论</string>
+
+    <!--语音播报-->
+    <string name="light">灯光</string>
+    <string name="subject_3">科目三</string>
+    <string name="voice_broadcast">语音播报</string>
+
+    <!--教练认证-->
+    <string name="click_to_upload">点击上传</string>
+    <string name="commit_auth">提交认证</string>
+    <string name="auth_tips">认证过程中如有疑问,请致电028-64897280</string>
+    <string name="coach_authentication">教练认证</string>
+    <string name="coach_auth_commit_success">提交认证成功</string>
+    <string name="auth_failed">认证失败,请重新提交.如有疑问请联系我们</string>
+    <string name="coach_auth_commit_tips">认证审核已提交,请耐心等待\n我们会在提交申请后24小时内反馈</string>
+    <string name="coach_auth_success_tips">恭喜你已成为助驾帮认证教练</string>
+    <string name="coach_auth_success">认证成功</string>
+    <string name="upload_coach_card_pls">请上传教练证</string>
+    <string name="upload_id_card_pls">请上传身份证</string>
+    <string name="auth_commit_failed">提交失败,请过一会儿重新提交</string>
+    <string name="auth_now">开始认证</string>
+    <string name="coach_auth_tip">此功能仅对助驾帮认证教练开放,请先完成教练身份认证</string>
+
+    <!--关于我们-->
+    <string name="company_name">成都益驾网络科技有限责任公司</string>
+    <string name="agreement">助驾帮软件许可及服务协议</string>
+    <string name="version">助驾帮&#160;%s版</string>
+</resources>

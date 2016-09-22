@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-2dp"
+        android:layout_marginRight="-2dp"
+        android:layout_marginTop="19dp"
+        android:paddingLeft="-4.0dp"
+        app:cardBackgroundColor="@color/text_color_white"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="2dp">
+
+        <include
+            android:id="@+id/item_clear_cache"
+            layout="@layout/vw_discover_item" />
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-2dp"
+        android:layout_marginRight="-2dp"
+        android:layout_marginTop="13dp"
+        android:paddingLeft="-4.0dp"
+        app:cardBackgroundColor="@color/text_color_white"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/item_check_update"
+                layout="@layout/vw_discover_item" />
+
+            <include
+                android:id="@+id/item_manual"
+                layout="@layout/vw_discover_item" />
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-2dp"
+        android:layout_marginRight="-2dp"
+        android:layout_marginTop="13dp"
+        android:paddingLeft="-4.0dp"
+        app:cardBackgroundColor="@color/text_color_white"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/item_contact_customer"
+                layout="@layout/vw_discover_item" />
+
+            <include
+                android:id="@+id/item_about"
+                layout="@layout/vw_discover_item" />
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:id="@+id/item_logout"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/list_item_bg"
+        android:text="@string/logout"
+        android:textColor="#2b2b2b"
+        android:textSize="16sp" />
+
+</LinearLayout>

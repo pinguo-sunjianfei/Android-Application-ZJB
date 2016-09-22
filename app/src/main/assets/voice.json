@@ -1,0 +1,114 @@
+{
+  "light": [
+    {
+      "name": "灯光1",
+      "fileName": "light_1.mp3"
+    },
+    {
+      "name": "灯光2",
+      "fileName": "light_2.mp3"
+    },
+    {
+      "name": "灯光3",
+      "fileName": "light_3.mp3"
+    },
+    {
+      "name": "灯光4",
+      "fileName": "light_4.mp3"
+    },
+    {
+      "name": "灯光5",
+      "fileName": "light_5.mp3"
+    },
+    {
+      "name": "灯光6",
+      "fileName": "light_6.mp3"
+    },
+    {
+      "name": "灯光7",
+      "fileName": "light_7.mp3"
+    },
+    {
+      "name": "灯光8",
+      "fileName": "light_8.mp3"
+    }
+  ],
+  "subject_3": [
+    {
+      "name": "考试准备",
+      "fileName": "subject_3_1.mp3"
+    },
+    {
+      "name": "起步",
+      "fileName": "subject_3_2.mp3"
+    },
+    {
+      "name": "路口直行",
+      "fileName": "subject_3_7.mp3"
+    },
+    {
+      "name": "变换车道",
+      "fileName": "subject_3_5.mp3"
+    },
+    {
+      "name": "公共汽车站",
+      "fileName": "subject_3_13.mp3"
+    },
+    {
+      "name": "通过学校",
+      "fileName": "subject_3_12.mp3"
+    },
+    {
+      "name": "直线行驶",
+      "fileName": "subject_3_3.mp3"
+    },
+    {
+      "name": "路口左转",
+      "fileName": "subject_3_8.mp3"
+    },
+    {
+      "name": "路口右转",
+      "fileName": "subject_3_9.mp3"
+    },
+    {
+      "name": "百米加减档",
+      "fileName": "subject_3_4.mp3"
+    },
+    {
+      "name": "会车",
+      "fileName": "subject_3_18.mp3"
+    },
+    {
+      "name": "超车",
+      "fileName": "subject_3_17.mp3"
+    },
+    {
+      "name": "减速",
+      "fileName": "subject_3_14.mp3"
+    },
+    {
+      "name": "限速",
+      "fileName": "subject_3_16.mp3"
+    },
+    {
+      "name": "人行横道",
+      "fileName": "subject_3_10.mp3"
+    },
+    {
+      "name": "人行横道-行人已通过",
+      "fileName": "subject_3_11.mp3"
+    },
+    {
+      "name": "隧道",
+      "fileName": "subject_3_15.mp3"
+    },
+    {
+      "name": "掉头",
+      "fileName": "subject_3_19.mp3"
+    },
+    {
+      "name": "靠边停车",
+      "fileName": "subject_3_6.mp3"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center_horizontal"
+              android:background="@android:color/white"
+              android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:lineSpacingExtra="3dp"
+        android:text="@string/dlg_noinviter"
+        android:textColor="#545353"
+        android:textSize="14sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="20dp"
+        android:background="@color/h_divider_line_color"/>
+
+    <Button
+        android:id="@+id/dlg_noinviter_bt"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:text="@string/Iknowit"
+        android:textColor="#2e2e2e"
+        android:background="@drawable/selector_dialog_left_btn_color_with_corner"
+        android:textSize="14sp"/>
+
+</LinearLayout>

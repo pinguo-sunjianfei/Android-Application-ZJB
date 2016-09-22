@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="open_sdk_r5509_lite">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/open_sdk_r5509_lite.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

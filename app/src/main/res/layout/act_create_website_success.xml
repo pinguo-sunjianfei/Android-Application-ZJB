@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_main"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30.0dp"
+            android:text="@string/create_website_success_title"
+            android:textColor="@color/black"
+            android:textSize="16.0sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/create_website_success_title_top_margin"
+            android:src="@drawable/create_website_success" />
+
+        <TextView
+            android:id="@+id/recommend_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dp"
+            android:layout_marginRight="10.0dp"
+            android:layout_marginTop="@dimen/create_website_success_text_top_margin"
+            android:gravity="left"
+            android:text="@string/excellent_website"
+            android:textColor="#a4a29f"
+            android:textSize="14.0sp" />
+
+        <LinearLayout
+            android:id="@+id/recommend_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dp"
+            android:layout_marginRight="10.0dp"
+            android:layout_marginTop="6.0dp"
+            android:background="@color/text_color_white"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/create_website_success_photo_bottom_padding">
+
+            <ImageView
+                android:id="@+id/avatar"
+                android:layout_width="60.0dp"
+                android:layout_height="60.0dp"
+                android:layout_marginTop="20.0dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/avatar_circle_default" />
+
+            <TextView
+                android:id="@+id/nick_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11.0dp"
+                android:text="增大哈"
+                android:textColor="@color/black"
+                android:textSize="15.0sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11.0dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/teach_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="9年教龄"
+                    android:textColor="@color/black"
+                    android:textSize="14.0sp" />
+
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8.0dp"
+                    android:layout_marginRight="8.0dp"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:id="@+id/school"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="天心驾校"
+                    android:textColor="@color/black"
+                    android:textSize="14.0sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/same_school"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13.0dp"
+                android:text="@string/same_school"
+                android:textColor="@color/themes_main"
+                android:textSize="14.0sp" />
+
+            <com.idrv.coach.ui.view.ImageGridLayout
+                android:id="@+id/grid_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4.0dp"
+                android:layout_marginRight="4.0dp"
+                android:layout_marginTop="@dimen/create_website_success_photo_top_margin"
+                app:item_count="1"
+                app:item_margin="4.0dp"
+                app:item_row_view_count="4" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btn_reviews"
+            android:layout_width="190.0dp"
+            android:layout_height="45.0dp"
+            android:layout_marginTop="-23.0dp"
+            android:background="@drawable/btn_propagation_setting"
+            android:gravity="center"
+            android:text="@string/ask_his_website"
+            android:textColor="@color/text_color_white"
+            android:textSize="16.0sp" />
+
+        <TextView
+            android:id="@+id/btn_website"
+            android:layout_width="190.0dp"
+            android:layout_height="45.0dp"
+            android:layout_marginTop="100.0dp"
+            android:background="@drawable/btn_propagation_setting"
+            android:gravity="center"
+            android:text="@string/my_website"
+            android:textColor="@color/text_color_white"
+            android:textSize="16.0sp"
+            android:visibility="gone" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20.0dp" />
+    </LinearLayout>
+</ScrollView>

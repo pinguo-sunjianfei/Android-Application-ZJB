@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.idrv.coach.ui.view.RankItemLayout
+        android:id="@+id/rank_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:item_chassis_drawable="@drawable/default_bottom_image"
+        app:item_num_text_size="14"
+        app:item_number_background_color="#8f70ab"
+        app:item_number_margin_top="-18dp"
+        app:item_number_text_color="@color/text_color_white"
+        app:item_show_chassis="true"
+        app:item_width_height="75.0dp" />
+
+</LinearLayout>

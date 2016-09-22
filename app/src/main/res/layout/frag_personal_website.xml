@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="3.0dp"
+        android:layout_marginLeft="20.0dp"
+        android:layout_marginRight="20.0dp"
+        android:layout_marginTop="2.0dp"
+        android:orientation="vertical"
+        app:cardBackgroundColor="@color/text_color_white"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="2.0dp"
+        app:contentPaddingLeft="8.0dp"
+        app:contentPaddingRight="8.0dp"
+        app:contentPaddingTop="12.0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|left"
+                    android:layout_marginLeft="5.0dp"
+                    android:text="@string/complete_profile"
+                    android:textColor="@color/themes_main"
+                    android:textSize="13.0sp" />
+
+                <FrameLayout
+                    android:id="@+id/message_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|top|center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="3.0dp"
+                        android:drawableTop="@drawable/icon_website_new_message"
+                        android:text="@string/message"
+                        android:textColor="@color/black_87"
+                        android:textSize="11.0sp" />
+
+                    <com.idrv.coach.ui.view.RedPointView
+                        android:id="@+id/new_msg"
+                        android:layout_width="8dip"
+                        android:layout_height="8dip"
+                        android:layout_gravity="right|top" />
+                </FrameLayout>
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <include
+                        android:id="@+id/item_profile"
+                        layout="@layout/vw_website_item"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0" />
+
+                    <View
+                        android:layout_width="8.0dp"
+                        android:layout_height="match_parent" />
+
+                    <include
+                        android:id="@+id/item_services"
+                        layout="@layout/vw_website_item"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8.0dp"
+                    android:orientation="horizontal">
+
+                    <include
+                        android:id="@+id/item_student_photo"
+                        layout="@layout/vw_website_item"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0" />
+
+                    <View
+                        android:layout_width="8.0dp"
+                        android:layout_height="match_parent" />
+
+                    <include
+                        android:id="@+id/item_my_photo"
+                        layout="@layout/vw_website_item"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/news_share_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/website_bottom_item_height"
+                    android:layout_marginTop="8.0dp"
+                    android:background="@drawable/website_item_bg"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:drawableLeft="@drawable/icon_share_news"
+                        android:drawablePadding="20.0dp"
+                        android:gravity="center"
+                        android:text="@string/today_task"
+                        android:textColor="#000000"
+                        android:textSize="14.0sp" />
+
+                    <TextView
+                        android:id="@+id/news_sub_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dp"
+                        android:gravity="center"
+                        android:text="@string/had_shared"
+                        android:textColor="@color/black_54"
+                        android:textSize="11.0sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</FrameLayout>

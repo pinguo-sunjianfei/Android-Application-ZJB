@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#000"
+    android:orientation="horizontal"
+    android:padding="3dp">
+
+    <com.idrv.coach.ui.widget.TextSwitcherView
+        android:id="@+id/hourTsv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#3f3f3f" />
+
+    <TextView
+        android:id="@+id/midHourTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":" />
+
+    <com.idrv.coach.ui.widget.TextSwitcherView
+        android:id="@+id/minuteTsv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#3f3f3f" />
+
+    <TextView
+        android:id="@+id/midMinuteTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":" />
+    <TextView
+        android:id="@+id/secondTsv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#3f3f3f"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp" />
+
+</LinearLayout>

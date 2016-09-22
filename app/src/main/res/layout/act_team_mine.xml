@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    android:orientation="vertical"
+    tools:context="com.idrv.coach.ui.TeamNameActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="17dp"
+        android:background="@color/h_divider_line_color" />
+
+    <include
+        android:id="@+id/myteam_item_teamName"
+        layout="@layout/vw_discover_item" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:background="@android:color/white"
+        android:paddingTop="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:text="@string/myteam_team_number"
+            android:textColor="#2b2b2b"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/myteam_numberSumTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawablePadding="8dp"
+            android:paddingRight="16dp"
+            android:textSize="12sp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/myteam_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/myteam_numberSumTv"
+            android:overScrollMode="never"
+            android:padding="5dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

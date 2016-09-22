@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/coach_auth_card_top_margin"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/upload_coach_card" />
+
+            <FrameLayout
+                android:id="@+id/coach_card_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="55.0dp"
+                android:layout_marginRight="55.0dp"
+                android:layout_marginTop="8.0dp"
+                android:background="@drawable/shape_rec_red_8dp"
+                android:paddingBottom="@dimen/coach_auth_padding"
+                android:paddingTop="@dimen/coach_auth_padding">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/coach_card_iv"
+                        android:layout_width="170.0dp"
+                        android:layout_height="111.0dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/auth_coach_card_default" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/coach_auth_text_view_top_margin"
+                        android:text="@string/click_to_upload"
+                        android:textColor="@color/themes_main"
+                        android:textSize="14.0sp" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/coach_auth_card_top_margin"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/upload_id_card" />
+
+            <FrameLayout
+                android:id="@+id/id_card_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="55.0dp"
+                android:layout_marginRight="55.0dp"
+                android:layout_marginTop="8.0dp"
+                android:background="@drawable/shape_rec_red_8dp"
+                android:paddingBottom="@dimen/coach_auth_padding"
+                android:paddingTop="@dimen/coach_auth_padding">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/id_card_iv"
+                        android:layout_width="170.0dp"
+                        android:layout_height="111.0dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/auth_id_card_default" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/coach_auth_text_view_top_margin"
+                        android:text="@string/click_to_upload"
+                        android:textColor="@color/themes_main"
+                        android:textSize="14.0sp" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/auth_tips"
+            android:textColor="#9d9d9d"
+            android:textSize="11.0sp" />
+
+        <TextView
+            android:id="@+id/btn_commit"
+            android:layout_width="match_parent"
+            android:layout_height="45.0dp"
+            android:layout_marginTop="@dimen/coach_auth_text_view_top_margin"
+            android:background="@color/themes_main"
+            android:gravity="center"
+            android:text="@string/commit_auth"
+            android:textColor="@color/text_color_white"
+            android:textSize="16.0dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/auth_failed_tv"
+        android:layout_width="match_parent"
+        android:layout_height="36.0dp"
+        android:background="#7F000000"
+        android:gravity="center"
+        android:text="@string/auth_failed"
+        android:textColor="#e9e9e9"
+        android:textSize="11.0sp"
+        android:visibility="gone" />
+</FrameLayout>

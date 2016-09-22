@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="150.0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/zjb_logo" />
+
+    <TextView
+        android:id="@+id/version_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="13.0dp"
+        android:text="助驾帮4.0版"
+        android:textColor="#363636"
+        android:textSize="15.0sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:paddingBottom="22.0dp">
+
+        <!--<TextView-->
+            <!--android:id="@+id/service_declared"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:text="@string/agreement"-->
+            <!--android:textColor="#908f8f"-->
+            <!--android:textSize="11.0sp" />-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6.0dp"
+            android:gravity="center"
+            android:text="@string/company_name"
+            android:textColor="#5c5c5c"
+            android:textSize="12.0sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/my_website_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="11.0dp">
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="80.0dp"
+            android:layout_height="80.0dp"
+            android:layout_marginTop="15.0dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/nick_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13.0dp"
+            android:text="曾胖"
+            android:textColor="@color/text_color_white"
+            android:textSize="17.0sp" />
+
+        <TextView
+            android:id="@+id/school"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8.0dp"
+            android:text="天欣驾校"
+            android:textColor="#F7ECEC"
+            android:textSize="14.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="66.0dp"
+        android:background="@color/text_color_white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0.0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/use_app_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30天"
+                android:textColor="@color/themes_main"
+                android:textSize="18.0sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dp"
+                android:text="@string/use_app_time"
+                android:textColor="@color/black"
+                android:textSize="14.0sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0.0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/adv_times"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="127次"
+                android:textColor="@color/themes_main"
+                android:textSize="18.0sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dp"
+                android:text="@string/advertise_for_me"
+                android:textColor="@color/black"
+                android:textSize="14.0sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="50.0dp"
+        android:layout_marginTop="13.0dp"
+        android:background="@color/text_color_white"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_photo"
+            style="@style/website_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:checked="true"
+            android:paddingLeft="20.0dp"
+            android:paddingRight="20.0dp"
+            android:text="照片333" />
+
+        <RadioButton
+            android:id="@+id/radio_comment"
+            style="@style/website_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="20.0dp"
+            android:paddingRight="20.0dp"
+            android:text="评论1" />
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.0px"
+        android:background="@color/h_divider_line_color" />
+
+</LinearLayout>
