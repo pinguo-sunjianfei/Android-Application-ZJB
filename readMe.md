@@ -1,22 +1,7 @@
-#服务器接口文档
+#项目介绍
 
-https://coding.net/u/sunjianfei12388/p/zjb_parent/git/tree/master
-
-测试服务器:  http://test.idrv.com.cn/zjb
-
-正式服务器:  http://zjb.idrv.com.cn
-
-
-#七牛服务器文档
-http://developer.qiniu.com/docs/v6/api/reference/fop/image/imageview2.html
-
-#公共参数文档
-https://coding.net/u/sunjianfei12388/p/zjb_parent/git/tree/master
-  
-1.ui->adapter下面包含了各种适配器，除了传统的ListView\RecyclerView\ViewPager的适配器之外，还包括了一些多方法接口的空实现
-    比如：TextWatcher的默认实现TextWatcherAdapter
-2.常用插件下载：
-  2.1 Parcelable:https://plugins.jetbrains.com/files/7332/19984/android-parcelable-intellij-plugin.jar
-  2.2 Gson : https://plugins.jetbrains.com/files/7654/21015/GsonFormat1.2.jar
-3.Rxjava注意事项
-  3.1 Observable对象的doOnNext方法优先于subscribe方法的onNext执行
+这是我创业产品的Android客户端.由于投资人撤资.该项目也理所当然的被废弃.
+<br>
+该项目是使用RxJava开发.MVC架构.有兴趣的同学可以参考下一个完整的Android客户端项目该如何设计
+<br>
+最后求工作  成都 .作者邮箱371763619@qq.com
